@@ -1,0 +1,58 @@
+<prefabs>
+	<game_entity name="pb_war_wagon" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PBWarWagon">
+				<variables></variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pb_war_wagon_body" old_prefab_name="">
+				<transform position="0.000, 0.000, 1.568"/>
+				<physics shape="bo_pb_warwagon_body" override_material="wood">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="pb_warwagon_body"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_war_wagon_axle_front" old_prefab_name="">
+				<tags>
+					<tag name="pb_axle"/>
+				</tags>
+				<transform position="-0.363, 1.234, 0.697"/>
+				<physics shape="bo_pb_warwagon_axel" override_material="wood">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="pb_warwagon_axel"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_war_wagon_axle_rear" old_prefab_name="">
+				<tags>
+					<tag name="pb_axle"/>
+				</tags>
+				<transform position="-0.363, -1.321, 0.697"/>
+				<physics shape="bo_pb_warwagon_axel" override_material="wood">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="pb_warwagon_axel"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_war_wagon_attach_point" old_prefab_name="">
+				<tags>
+					<tag name="pb_attach_point"/>
+				</tags>
+				<transform position="-0.310, 3.379, 0.895"/>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

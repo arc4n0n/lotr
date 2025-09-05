@@ -1,0 +1,14 @@
+<prefabs>
+	<game_entity name="pb_trough" old_prefab_name="">
+		<tags>
+			<tag name="pb_chest"/>
+			<tag name="pb_trough"/>
+		</tags>
+		<transform position="15.102, 9.325, 0.115" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_straw_c"/>
+		<components>
+			<meta_mesh_component name="bd_straw_c"/>
+		</components>
+	</game_entity>
+</prefabs>
+

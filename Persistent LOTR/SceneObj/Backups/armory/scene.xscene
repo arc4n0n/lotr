@@ -1,0 +1,1024 @@
+<?xml version="1.0"?>
+<scene name="armory" version="2" unique_token="{CDB9957D-6CD4-4912-9915-9974B0C4D100}" revision="1756416864746" id_automatic="true">
+	<flora_bounding_rect min="0.000, 0.000" max="400.000, 400.000"/>
+	<levels>
+		<level name="base" mask="1"/>
+	</levels>
+	<environment_properties>
+		<property name="nav_mesh_auto_generated_" value="false"/>
+		<property name="physics_world_min" value="0.000, 0.000"/>
+		<property name="physics_world_max_" value="400.000, 400.000"/>
+		<property name="north_angle" value="0.000"/>
+		<property name="is_indoors" value="false"/>
+		<property name="disable_flora_billboards" value="false"/>
+		<property name="ground_color" value="0.000, 0.000, 0.000"/>
+		<property name="prt_multiplier" value="1.000"/>
+		<property name="prt_point_light_multiplier" value="1.000"/>
+		<property name="fog_start_distance" value="50.000"/>
+		<property name="prt_color_contrast" value="1.000"/>
+		<property name="scene_scale_multiplier" value="1.000"/>
+		<property name="prt_intensity_contrast" value="1.000"/>
+		<property name="prt_fallback_probe_index" value="-1, -1, -1"/>
+		<property name="enforced_color_grade" value=""/>
+		<property name="gi_data_exists" value="false"/>
+		<atmosphere_properties>
+			<property name="atmosphere_name" value="editor_default"/>
+			<property name="wind" value="1.000, 0.000"/>
+			<property name="scene_fog_falloff_offset" value="0.000"/>
+		</atmosphere_properties>
+		<water_properties version="1">
+			<property name="water_level" value="-100.000"/>
+			<property name="water_strength" value="5.000"/>
+			<property name="water_wind_dependency" value="1.000"/>
+			<property name="water_material" value="water_default"/>
+			<property name="water_shallow_color" value="1.000, 1.000, 1.000"/>
+			<property name="water_deep_color" value="1.000, 1.000, 1.000"/>
+			<property name="water_exists" value="false"/>
+			<property name="place_water_probe" value="true"/>
+		</water_properties>
+		<out_of_bounds_effects_properties>
+			<property name="vignette_color" value="0.000, 0.500, 1.000"/>
+			<property name="vignette_alpha" value="0.000"/>
+		</out_of_bounds_effects_properties>
+	</environment_properties>
+	<entities>
+		<game_entity name="uruk_sword" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_a"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="0.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_blade_a1" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.900"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a1" position="0.000, 0.000, 0.260" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="uruk_scimitar" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_b"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="0.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_guard_a1" position="0.000, 0.000, 0.260" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_blade_a2" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="0.800, 1.000, 0.900" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="uruk_cutlass" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_c"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="1.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a3" position="0.000, 0.000, 0.250" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_blade_a3" position="0.000, 0.000, 0.630" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.900" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="mordor_sword" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_d"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="1.498, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_blade_a1" position="0.000, 0.000, 0.640" rotation="0.000, 0.000, 0.000" scale="1.200, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a2" position="0.000, 0.000, 0.260" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_handle_a2" position="0.000, 0.000, 0.140" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a2" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="mordor_scimitar" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_e"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="2.001, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_guard_a2" position="0.000, 0.000, 0.260" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_handle_a2" position="0.000, 0.000, 0.140" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a2" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_blade_a2" position="0.000, 0.000, 0.650" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="mordor_cutlass" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_f"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="2.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_guard_a2" position="0.000, 0.000, 0.260" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_handle_a2" position="0.000, 0.000, 0.140" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a2" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_blade_a3" position="0.000, 0.000, 0.640" rotation="0.000, 0.000, 0.000" scale="1.100, 1.000, 1.000" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="isengard_sword" old_prefab_name="">
+			<transform position="3.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_1h_sword_a01_blade" position="0.000, 0.000, 0.510" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_1h_sword_a01_handle" position="0.000, 0.000, 0.090" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_isengard_1h_sword_a01_pommel" _index_="2"/>
+				<meta_mesh_component name="wm_isengard_1h_sword_a01_guard" position="0.000, 0.000, 0.180" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="isengard_cleaver" old_prefab_name="">
+			<transform position="3.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_1h_sword_a02_blade" position="0.000, 0.000, 0.530" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_1h_sword_a02_guard" position="0.000, 0.000, 0.180" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_isengard_1h_sword_a02_handle" position="0.000, 0.000, 0.090" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_isengard_1h_sword_a02_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="isengard_greatsword" old_prefab_name="">
+			<transform position="4.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_berserker_sword_a01_blade" position="0.000, 0.000, 0.770" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_berserker_sword_a01_guard" position="0.000, 0.000, 0.440" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_isengard_berserker_sword_a01_handle" position="0.000, 0.000, 0.230" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+			</components>
+		</game_entity>
+		<game_entity name="nazgul_sword" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:nazgul_sword"/>
+			</tags>
+			<transform position="4.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_nazgul_sword_blade" position="0.000, 0.000, 0.980" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_nazgul_sword_guard" position="0.000, 0.000, 0.420" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_nazgul_sword_hilt" position="0.000, 0.000, 0.200" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_nazgul_sword_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="witchking_sword" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:witchking_sword"/>
+			</tags>
+			<transform position="5.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_witch_king_sword_blade" position="0.000, 0.000, 0.960" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_witch_king_sword_guard" position="0.000, 0.000, 0.380" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_witch_king_sword_hilt" position="0.000, 0.000, 0.200" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_witch_king_sword_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="easterling_sword" old_prefab_name="">
+			<transform position="5.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="easterling_sword_blade" position="0.000, 0.000, 0.820" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="easterling_sword_guard" position="0.000, 0.000, 0.200" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="easterling_sword_handle" position="0.000, 0.000, 0.200" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="easterling_sword_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="anduril" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:anduril"/>
+			</tags>
+			<transform position="6.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="anduril_blade" position="0.000, 0.000, 0.540" rotation="0.000, 0.000, 0.000" scale="1.300, 1.000, 1.000"/>
+				<meta_mesh_component name="anduril_guard" position="0.000, 0.000, 0.210" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.300" _index_="1"/>
+				<meta_mesh_component name="anduril_handle" position="0.000, 0.000, 0.130" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="anduril_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="6.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a01_blade" position="0.000, 0.000, 0.550" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a01_guard" position="0.000, 0.000, 0.190" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a01_hilt" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a01_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="7.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a02_blade" position="0.000, 0.000, 0.570" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a02_guard" position="0.000, 0.000, 0.150" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a02_hilt" position="0.000, 0.000, 0.090" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a02_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="7.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a03_blade" position="0.000, 0.000, 0.560" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a03_guard" position="0.000, 0.000, 0.210" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a03_hilt" position="0.000, 0.000, 0.110" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a03_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="8.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a04_blade" position="0.000, 0.000, 0.560" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a04_guard" position="0.000, 0.000, 0.160" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a04_hilt" position="0.000, 0.000, 0.080" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a04_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_longsword" old_prefab_name="">
+			<transform position="8.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a05_blade" position="0.000, 0.000, 0.770" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a05_guard" position="0.000, 0.000, 0.270" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a05_hilt" position="0.000, 0.000, 0.150" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a05_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="9.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a06_blade" position="0.000, 0.000, 0.630" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a06_guard" position="0.000, 0.000, 0.190" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a06_hilt" position="0.000, 0.000, 0.120" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a06_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="9.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a07_blade" position="0.000, 0.000, 0.590" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a07_guard" position="0.000, 0.000, 0.230" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a07_hilt" position="0.000, 0.000, 0.120" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a07_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="10.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a08_blade" position="0.000, 0.000, 0.630" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a08_guard" position="0.000, 0.000, 0.210" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a08_hilt" position="0.000, 0.000, 0.110" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a08_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_sword" old_prefab_name="">
+			<transform position="10.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a09_blade" position="0.000, 0.000, 0.560" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a09_guard" position="0.000, 0.000, 0.170" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a09_hilt" position="0.000, 0.000, 0.090" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a09_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="gondor_longsword" old_prefab_name="">
+			<transform position="11.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+			<components>
+				<meta_mesh_component name="wm_gondor_sword_a10_blade" position="0.000, 0.000, 0.720" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_gondor_sword_a10_guard" position="0.000, 0.000, 0.210" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_gondor_sword_a10_hilt" position="0.000, 0.000, 0.120" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_gondor_sword_a10_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="swanknight_sword" old_prefab_name="">
+			<transform position="11.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+			<components>
+				<meta_mesh_component name="wm_swan_knight_sword_a_blade" position="0.000, 0.000, 0.720" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_swan_knight_sword_a_guard" position="0.000, 0.000, 0.220" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_swan_knight_sword_a_hilt" position="0.000, 0.000, 0.120" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_swan_knight_sword_a_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="swanknight_sword" old_prefab_name="">
+			<transform position="12.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+			<components>
+				<meta_mesh_component name="wm_swan_knight_sword_b_blade" position="0.000, 0.000, 0.670" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.900"/>
+				<meta_mesh_component name="wm_swan_knight_sword_b_guard" position="0.000, 0.000, 0.220" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_swan_knight_sword_b_hilt" position="0.000, 0.000, 0.120" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_swan_knight_sword_b_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="pelargir_sword" old_prefab_name="">
+			<transform position="12.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+			<components>
+				<meta_mesh_component name="wm_pelagir_sword_a01_blade" position="0.000, 0.000, 0.520" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_pelagir_sword_a01_guard" position="0.000, 0.000, 0.200" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_pelagir_sword_a01_handle" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_pelagir_sword_a01_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="pelargir_spatha" old_prefab_name="">
+			<transform position="13.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+			<components>
+				<meta_mesh_component name="wm_pelagir_sword_a02_blade" position="0.000, 0.000, 0.520" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_pelagir_sword_a02_guard" position="0.000, 0.000, 0.170" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_pelagir_sword_a02_handle" position="0.000, 0.000, 0.090" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_pelagir_sword_a02_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="faramirs_sword" old_prefab_name="">
+			<transform position="13.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_faramir_sword_blade" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_faramir_sword_guard" position="0.000, 0.000, 0.190" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_faramir_sword_hilt" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_faramir_sword_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="boromirs_sword" old_prefab_name="">
+			<transform position="14.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_boromir_sword_blade" position="0.000, 0.000, 0.560" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_boromir_sword_guard" position="0.000, 0.000, 0.170" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_boromir_sword_hilt" position="0.000, 0.000, 0.110" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_boromir_sword_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="lamedon_sword" old_prefab_name="">
+			<transform position="14.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_lamedon_1h_sword_a_blade" position="0.000, 0.000, 0.700" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_lamedon_1h_sword_a_guard" position="0.000, 0.000, 0.240" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_lamedon_1h_sword_a_hilt" position="0.000, 0.000, 0.130" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_lamedon_1h_sword_a_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="lamedon_greatsword" old_prefab_name="">
+			<transform position="15.000, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_lamedon_2h_sword_a_blade" position="0.000, 0.000, 1.000" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_lamedon_2h_sword_a_guard" position="0.000, 0.000, 0.370" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_lamedon_2h_sword_a_hilt" position="0.000, 0.000, 0.240" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_lamedon_2h_sword_a_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="elven_sword" old_prefab_name="">
+			<transform position="15.500, 0.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_elven_sword_a_blade" position="0.000, 0.000, 0.650" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_elven_sword_a_handguard" position="0.000, 0.000, 0.610" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="wm_elven_sword_a_hilt" position="0.000, 0.000, 0.300" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="wm_elven_sword_a_pommel" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="uruk_sword" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_a"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="0.000, -0.250, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="1"/>
+				<meta_mesh_component name="dagger_blade_3" position="0.000, 0.000, 0.500" rotation="0.000, 0.000, 0.000" scale="1.300, 3.000, 1.500" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a2" position="0.000, 0.000, 0.210" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="uruk_scimitar" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_b"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="0.500, -0.250, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_guard_a1" position="0.000, 0.000, 0.260" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="2"/>
+				<meta_mesh_component name="cleaver_blade_8" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="0.900, 1.500, 0.900" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="uruk_cutlass" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_c"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="1.000, -0.250, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a3" position="0.000, 0.000, 0.250" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="cleaver_blade_4" position="0.000, 0.000, 0.620" rotation="0.000, 0.000, 0.000" scale="0.850, 1.500, 0.700" _index_="3">
+					<mesh name="cleaver_blade_4.lod2" factor="4284769380"/>
+					<mesh name="cleaver_blade_4.lod4" factor="4284769380"/>
+					<mesh name="cleaver_blade_4.lod1" factor="4284769380"/>
+					<mesh name="cleaver_blade_4" factor="4284769380"/>
+				</meta_mesh_component>
+			</components>
+		</game_entity>
+		<game_entity name="uruk_cutlass" old_prefab_name="">
+			<tags>
+				<tag name="pb_item:sm_uruk_sword_c"/>
+				<tag name="pb_market"/>
+				<tag name="pb_town:0"/>
+			</tags>
+			<transform position="1.000, -0.498, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_sword_handle_a1" position="0.000, 0.000, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_sword_pommel_a1" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_halberd_blade_a3" position="0.000, 0.000, 0.560" rotation="0.000, 0.000, 0.000" scale="0.500, 1.000, 1.100" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a2" position="0.000, 0.000, 0.220" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="morgul_blade" old_prefab_name="">
+			<transform position="0.000, -0.500, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="spear_blade_2" position="0.000, 0.000, 0.350" rotation="0.000, 0.000, 0.000" scale="0.600, 0.500, 1.500">
+					<mesh name="spear_blade_2.lod1" factor="4287730065"/>
+					<mesh name="spear_blade_2.lod2" factor="4287730065"/>
+					<mesh name="spear_blade_2.lod3" factor="4287730065"/>
+					<mesh name="spear_blade_2.lod4" factor="4287730065"/>
+					<mesh name="spear_blade_2.lod5" factor="4287730065"/>
+					<mesh name="spear_blade_2" factor="4287730065"/>
+				</meta_mesh_component>
+				<meta_mesh_component name="wm_witch_king_sword_guard" position="0.000, 0.000, 0.200" rotation="0.000, 3.140, 0.000" scale="1.000, 0.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sturgian_noble_grip_3" position="0.000, 0.000, 0.120" rotation="0.000, 0.000, 0.000" scale="1.200, 1.700, 1.130" _index_="2"/>
+				<meta_mesh_component name="wm_witch_king_sword_pommel" _index_="3"/>
+				<meta_mesh_component name="sm_uruk_sword_guard_a1" position="0.000, 0.000, 0.230" rotation="0.000, 0.000, 0.000" scale="1.000, 0.800, 0.400" _index_="4"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="0.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_halberd_blade_a1" position="0.000, 0.000, 1.980" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_halberd_guard_a1" position="0.000, 0.000, 1.730" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_halberd_handle_a1" position="0.000, 0.000, 0.840" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_halberd_pommel_a1" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="1.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_halberd_blade_a2" position="0.000, 0.000, 1.940" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_halberd_guard_a2" position="0.000, 0.000, 1.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_halberd_handle_a2" position="0.000, 0.000, 0.850" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_halberd_pommel_a2" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="1.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="sm_uruk_halberd_blade_a3" position="0.000, 0.000, 1.950" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="sm_uruk_halberd_handle_a2" position="0.000, 0.000, 0.880" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+				<meta_mesh_component name="sm_uruk_halberd_pommel_a3" _index_="2"/>
+				<meta_mesh_component name="sm_uruk_halberd_guard_a2" position="0.000, 0.000, 1.630" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="3"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="2.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_1h_pike_a01_blade" position="0.000, 0.000, 2.650" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_1h_pike_a01_handle" position="0.000, 0.000, 1.000" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="2.539, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_1h_pike_b01_blade" position="0.000, 0.000, 2.690" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_1h_pike_b01_handle" position="0.000, 0.000, 1.000" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="3.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_1h_spear_a01_blade" position="0.000, 0.000, 1.790" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_1h_spear_a01_handle" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="3.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_1h_spear_b01_blade" position="0.000, 0.000, 1.730" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_1h_spear_b01_handle" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="4.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_2h_axe_a01_blade" position="0.000, 0.000, 1.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_2h_axe_a01_handle" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="4.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_2h_axe_b01_blade" position="0.000, 0.000, 1.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_2h_axe_b01_handle" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="5.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_isengard_2h_axe_c01_blade" position="0.000, 0.000, 1.250" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_isengard_2h_axe_c01_handle" position="0.000, 0.000, 0.600" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="5.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_rohan_spear_a_blade" position="0.000, 0.000, 2.670" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_rohan_spear_a_handle" position="0.000, 0.000, 0.950" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="6.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_rohan_spear_b_blade" position="0.000, 0.000, 2.760" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_rohan_spear_b_handle" position="0.000, 0.000, 1.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="6.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_rohan_spear_c_blade" position="0.000, 0.000, 2.670" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_rohan_spear_c_handle" position="0.000, 0.000, 0.950" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="7.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_rohan_spear_d_blade" position="0.000, 0.000, 2.670" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_rohan_spear_d_handle" position="0.000, 0.000, 0.950" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="7.500, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_rohan_spear_e_blade" position="0.000, 0.000, 2.760" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_rohan_spear_e_handle" position="0.000, 0.000, 1.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+		<game_entity name="empty_object" old_prefab_name="">
+			<transform position="8.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<components>
+				<meta_mesh_component name="wm_rohan_spear_f_blade" position="0.000, 0.000, 2.760" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				<meta_mesh_component name="wm_rohan_spear_f_handle" position="0.000, 0.000, 1.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000" _index_="1"/>
+			</components>
+		</game_entity>
+	</entities>
+	<terrain enabled="true" node_dimension_x="4" node_dimension_y="4" node_size="100.000" lod_multiplier="1.000" min_height="-100.000" max_height="500.000" vista_normalmap="" vista_diffuse_name="" vista_diffuse_blend_type="0" vista_diffuse_blend_amount="0.000" vista_layer_detail_distance="35.000" vista_albedo_multiplier="0.670" vista_detail_albedo_name="" vista_detail_normal_name="" vista_detail_tile="20.000" vista_tileset="" use_dynamic_weather_effects="0" dynamic_flowmap_texture_name="" colormap_detail_level="0" ao_intensity="4.000">
+		<outer_mesh>
+			<variable name="outer_mesh_name" value=""/>
+			<variable name="diffuse1_texture_name" value=""/>
+			<variable name="diffuse2_texture_name" value=""/>
+			<variable name="diffuse3_texture_name" value=""/>
+			<variable name="areamap_texture_name" value=""/>
+			<variable name="splatmap_texture_name" value=""/>
+			<variable name="splatmap_normal_name" value=""/>
+			<variable name="horizon_mesh_diffuse_1_multiplier" value="1.000"/>
+			<variable name="horizon_mesh_diffuse_2_multiplier" value="1.000"/>
+			<variable name="horizon_mesh_diffuse_3_multiplier" value="1.000"/>
+			<variable name="horizon_mesh_areamap_tile_multiplier" value="1.000"/>
+			<variable name="horizon_mesh_areamap_power" value="1.000"/>
+			<variable name="horizon_mesh_height" value="1.000"/>
+		</outer_mesh>
+		<layers version="1">
+			<layer name="desert_a">
+				<summer is_enabled="true" name="desert_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+					<textures>
+						<texture type="diffusemap" name="desert_floor_a"/>
+						<texture type="areamap" name="desert_floor_a"/>
+						<texture type="normalmap" name="desert_floor_a_n"/>
+						<texture type="specularmap" name="desert_floor_a_s"/>
+						<texture type="splattingmap" name="none"/>
+						<texture type="displacementmap" name="desert_floor_a_h"/>
+					</textures>
+					<layer_flags>
+						<flag name="use_parallax" value="false"/>
+						<flag name="use_displacement_mapping" value="false"/>
+						<flag name="use_randomized_normalmap" value="false"/>
+						<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+						<flag name="use_transparency_of_ground_slope" value="false"/>
+						<flag name="use_dxt5_normal" value="false"/>
+						<flag name="use_six_side_uv_mapping" value="false"/>
+					</layer_flags>
+					<meshes/>
+				</summer>
+				<fall is_enabled="true" name="desert_a" is_flora_layer="false" is_mesh_blend_layer="false">
+					<meshes/>
+				</fall>
+				<winter is_enabled="true" name="desert_a" is_flora_layer="false" is_mesh_blend_layer="false">
+					<meshes/>
+				</winter>
+				<spring is_enabled="true" name="desert_a" is_flora_layer="false" is_mesh_blend_layer="false">
+					<meshes/>
+				</spring>
+			</layer>
+		</layers>
+		<nodes>
+			<node idx="0" idy="0" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="0" idy="1" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="0" idy="2" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="0" idy="3" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="1" idy="0" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="1" idy="1" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="1" idy="2" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="1" idy="3" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="2" idy="0" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="2" idy="1" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="2" idy="2" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="2" idy="3" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="3" idy="0" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="3" idy="1" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="3" idy="2" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+			<node idx="3" idy="3" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+				<texture_levels>
+					<variable name="heightmap_level" value="6"/>
+					<variable name="min_heightmap_level" value="2"/>
+					<variable name="normalmap_level" value="6"/>
+					<variable name="weightmap_levels">
+						<variable layer="0" value="6"/>
+						<variable layer="1" value="0"/>
+						<variable layer="2" value="0"/>
+						<variable layer="3" value="0"/>
+						<variable layer="4" value="0"/>
+						<variable layer="5" value="0"/>
+						<variable layer="6" value="0"/>
+						<variable layer="7" value="0"/>
+						<variable layer="8" value="0"/>
+						<variable layer="9" value="0"/>
+						<variable layer="10" value="0"/>
+						<variable layer="11" value="0"/>
+						<variable layer="12" value="0"/>
+						<variable layer="13" value="0"/>
+						<variable layer="14" value="0"/>
+						<variable layer="15" value="0"/>
+					</variable>
+				</texture_levels>
+			</node>
+		</nodes>
+	</terrain>
+	<editor_data editor_camera_position="7.654, -9.593, 7.859" editor_camera_elevation="-0.890" editor_camera_bearing="1.319" editor_camera_forward="-0.030, 0.914, -0.404" author="" comment=""/>
+	<camera_data near_plane="0.100" far_plane="100000.000"/>
+	<Paths/>
+</scene>
+

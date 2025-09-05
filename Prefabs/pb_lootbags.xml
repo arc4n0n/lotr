@@ -1,0 +1,61 @@
+﻿<prefabs>
+	<game_entity name="pb_loot" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="LootBagComponent">
+				<variables>
+					<variable name="LootbagType" value="inventory"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pb_lootbag" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="0.4, 0.6, 0.4"/>
+				<physics shape="bo_bd_sack_b" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="bd_sack_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_loot_dead" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="LootBagComponent">
+				<variables>
+					<variable name="LootbagType" value="dead"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pb_lootbag_dead" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="0.66, 0.66, 0.66"/>
+				<physics shape="bo_mill_flour_sack" override_material="straw">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="pb_sack_dead"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

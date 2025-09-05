@@ -1,0 +1,57 @@
+<prefabs>
+	<game_entity name="pb_occluder" old_prefab_name="" occlusion_body_name="bo_occ_aserai_castle_wall_d_l2">
+		<flags>
+			<flag name="not_affected_by_season" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.812" scale="1.000, 1.000, 1.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pb_occluder_volumebox" old_prefab_name="" occlusion_body_name="bo_occ_aserai_castle_wall_d_l2">
+		<flags>
+			<flag name="not_affected_by_season" value="true"/>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="no_shadow" value="true"/>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.832" scale="1.000, 1.000, 0.674"/>
+		<components>
+			<meta_mesh_component name="volume_box" position="-0.100, 0.500, -10.000" rotation="0.000, 0.000, 0.000" scale="12.500, 4.000, 18.000"/>
+		</components>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,20 @@
+<prefabs>
+	<game_entity name="pb_money_bag" old_prefab_name="">
+		<transform position="5.046, 12.404, 0.010" rotation_euler="0.000, 0.000, 0.000" scale="0.200, 0.300, 0.220"/>
+		<physics shape="bo_bd_sack_b" override_material="straw"/>
+		<components>
+			<meta_mesh_component name="bd_sack_b">
+				<mesh name="bd_sack_b" factor="4293197598"/>
+				<mesh name="bd_sack_b.lod2" factor="4293197598"/>
+				<mesh name="bd_sack_b.lod3" factor="4293197598"/>
+				<mesh name="bd_sack_b.lod4" factor="4293197598"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="PBMoneyBag">
+				<variables>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
