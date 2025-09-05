@@ -1,0 +1,89 @@
+<prefabs>
+	<game_entity old_prefab_name="" name="Tree_platform_1">
+		<children>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="-0.001, 0.002, -0.596" position="-1.325, 1.841, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="1.843, -0.167, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.001, 0.002, 0.596" position="1.847, 1.816, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="2.497, -0.241, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.001, 0.002, 0.596" position="-1.370, -2.290, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_a"/>
+				</components>
+				<physics shape="bo_wooden_platform_a"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="0.254, -0.166, 3.703"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="-0.001, 0.002, -0.596" position="1.871, -2.332, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_a"/>
+				</components>
+				<physics shape="bo_wooden_platform_a"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="0.254, 1.897, 3.703"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_a">
+				<components>
+					<meta_mesh_component name="wooden_platform_a"/>
+				</components>
+				<physics shape="bo_wooden_platform_a"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="0.254, -2.364, 3.703"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="-1.307, -0.272, 3.701"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="wooden_platform_c">
+				<components>
+					<meta_mesh_component name="wooden_platform_c"/>
+				</components>
+				<physics shape="bo_wooden_platform_c"/>
+				<transform scale="0.536, 0.536, 0.536" rotation_euler="0.000, 0.002, 0.000" position="-1.944, -0.226, 3.701"/>
+			</game_entity>
+		</children>
+		<components>
+			<meta_mesh_component name="tree_high_b"/>
+		</components>
+		<physics override_material="wood" shape="bo_tree_high_b"/>
+		<transform scale="1.865, 1.865, 1.865" rotation_euler="0.000, 0.000, 0.000" position="57.111, 142.952, 0.000"/>
+	</game_entity>
+</prefabs>
+
