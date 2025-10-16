@@ -1,0 +1,22 @@
+<prefabs>
+	<game_entity name="pb_handcart" old_prefab_name="">
+		<transform position="15.083, 9.445, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_winery_wine_cart_small_empty" override_material="wood">
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<scripts>
+			<script name="PBHandCart" />
+		</scripts>
+		<components>
+			<meta_mesh_component name="winery_wine_cart_small_empty"/>
+		</components>
+		<children>
+			<game_entity name="pb_cart_attach_point" old_prefab_name="">
+				<transform position="-0.480, 1.542, 0.433"/>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

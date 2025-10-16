@@ -1,0 +1,213 @@
+<prefabs>
+	<game_entity name="pb_palm_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_composite_tree_high_v_palm_date_c" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_v_palm_date_c"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_palm_2" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_composite_tree_high_v_palm_date_d" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_v_palm_date_d"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_palm_3" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_composite_tree_high_v_palm_date_b" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_v_palm_date_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_palm_4" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_composite_tree_high_v_palm_date_a" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_v_palm_date_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_popular_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_m_poplar" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_m_poplar"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_popular_2" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_l_poplar" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_l_poplar"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_popular_3" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_j_poplar_forest" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_j_poplar_forest"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_popular_5" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_i_poplar_forest" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_i_poplar_forest"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_aspen_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_g_aspen" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_g_aspen"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_aspen_2" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_f_aspen" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_f_aspen"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_aspen_3" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_e_aspen" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_e_aspen"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_beech_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_forest_beech_a" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_forest_beech_d"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_tree_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_a" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_tree_2" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_d" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_d"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_tree_3" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_c" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_c"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_tree_4" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_b" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_pine_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_o_pine" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_o_pine"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_pine_2" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_q_pine" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_q_pine"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_pine_3" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_r_pine" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_r_pine"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_pine_4" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_t_pine" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_t_pine"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_pine_5" old_prefab_name="">
+		<tags>
+			<tag name="pb_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_tree_high_u_pine" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="tree_high_u_pine"/>
+		</components>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,845 @@
+<prefabs>
+	<game_entity name="iron_throne" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="npc_wait"/>
+			<tag name="npc_common"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_chair_a" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="bd_chair_a">
+				<mesh name="bd_chair_a" material="crude_iron"/>
+				<mesh name="bd_chair_a.lod2" material="crude_iron"/>
+				<mesh name="bd_chair_a.lod3" material="crude_iron"/>
+				<mesh name="bd_chair_a.lod4" material="crude_iron"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="Chair">
+				<variables>
+					<variable name="ChairType" value="Chair"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="0.000, -0.600, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_sit_down_from_front"/>
+							<variable name="LoopStartAction" value="act_sit_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_stand_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.177, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_b" old_prefab_name="" mobility="1">
+				<transform position="-0.229, 0.346, 1.496" rotation_euler="-0.250, 2.672, 0.012"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_b">
+						<mesh name="vlandia_twohanded_sword_b.lod1" material="dark_metal"/>
+						<mesh name="vlandia_twohanded_sword_b.lod2" material="dark_metal"/>
+						<mesh name="vlandia_twohanded_sword_b.lod3" material="dark_metal"/>
+						<mesh name="vlandia_twohanded_sword_b" material="dark_metal"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+						<transform position="-0.441, -0.033, 0.207" rotation_euler="-0.011, -0.950, -3.099"/>
+						<components>
+							<meta_mesh_component name="vlandia_twohanded_sword_c">
+								<mesh name="vlandia_twohanded_sword_c.lod1" material="dark_metal"/>
+								<mesh name="vlandia_twohanded_sword_c.lod2" material="dark_metal"/>
+								<mesh name="vlandia_twohanded_sword_c.lod3" material="dark_metal"/>
+								<mesh name="vlandia_twohanded_sword_c" material="dark_metal"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.088" rotation_euler="0.000, 0.000, 0.000" scale="1.377, 1.377, 1.377"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.291, 0.290, 1.091" rotation_euler="-1.221, -1.571, -1.552"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.297, 0.290, 1.091" rotation_euler="-1.217, 1.571, 1.589"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.013, 0.298, 1.822" rotation_euler="0.000, -3.142, 0.000" scale="1.336, 1.336, 1.336"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" factor="4278255873"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" factor="4278255873"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" factor="4278255873"/>
+						<mesh name="vlandia_twohanded_sword_c" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.175, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.443, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.436, 0.000" scale="1.224, 1.224, 1.224"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="-0.041, 0.379, 1.090" rotation_euler="0.000, 0.876, 0.000" scale="0.966, 0.966, 0.966"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.055, 0.379, 1.086" rotation_euler="0.000, -0.892, 0.000" scale="1.030, 1.030, 1.030"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.220, 0.000" scale="1.307, 1.307, 1.307"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.068, 0.379, 1.095" rotation_euler="0.000, -1.111, 0.000" scale="0.902, 0.902, 0.902"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.216, 0.000" scale="1.307, 1.307, 1.307"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.663, 0.000" scale="1.159, 1.159, 1.159"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.656, 0.000" scale="1.095, 1.095, 1.095"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.763, 0.000" scale="1.030, 1.030, 1.030"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.556, 0.000" scale="1.224, 1.224, 1.224"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.323, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="-0.076, 0.379, 1.074" rotation_euler="0.000, 0.983, 0.000" scale="0.902, 0.902, 0.902"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.337, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.107, 0.000" scale="1.331, 1.331, 1.331"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.113, 0.000" scale="1.331, 1.331, 1.331"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, -0.785, 0.000" scale="1.095, 1.095, 1.095"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.004, 0.379, 1.128" rotation_euler="0.000, 0.543, 0.000" scale="1.159, 1.159, 1.159"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.065, 0.379, 1.088" rotation_euler="0.000, -1.004, 0.000" scale="0.966, 0.966, 0.966"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.291, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.060, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.061, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.291, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.745, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.394, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.405, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.756, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.860, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.508, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.065, 0.376, 1.090" rotation_euler="0.000, 0.850, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.499, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, 0.609, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.089, 0.376, 1.086" rotation_euler="0.000, 0.961, 0.000" scale="1.207, 1.207, 1.207"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.003, 0.376, 1.150" rotation_euler="0.000, -0.619, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_onehanded_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.081, 0.376, 1.097" rotation_euler="0.000, -0.971, 0.000" scale="1.288, 1.288, 1.288"/>
+				<components>
+					<meta_mesh_component name="vlandia_onehanded_sword_a">
+						<mesh name="vlandia_onehanded_sword_a.lod1" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a.lod2" factor="4278255873"/>
+						<mesh name="vlandia_onehanded_sword_a" factor="4278255873"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.009, 0.290, 1.366" rotation_euler="-1.571, -0.401, 2.758"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.300, 0.282, 1.091" rotation_euler="-1.571, 1.575, -1.552"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.433, -0.038, 0.306" rotation_euler="-1.513, 2.925, 1.340"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.411, -0.037, 0.310" rotation_euler="-1.512, -2.841, 1.857"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.031, 0.429, 1.112" rotation_euler="-1.512, 1.867, 1.857"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.031, 0.429, 1.112" rotation_euler="-1.072, -1.607, -1.612"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.031, 0.429, 0.665" rotation_euler="-1.512, 1.867, 1.857"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.031, 0.429, 0.665" rotation_euler="-1.072, -1.607, -1.612"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.163, 0.118, 0.496" rotation_euler="0.000, 0.000, -3.128" scale="0.706, 0.706, 0.706"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.132, 0.118, 0.536" rotation_euler="0.000, -3.140, -3.128" scale="0.706, 0.706, 0.706"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.040, -0.359, 0.184" rotation_euler="-1.570, 1.147, -1.981" scale="0.817, 0.472, 0.816"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.040, -0.359, 0.184" rotation_euler="-1.092, -1.570, 1.585" scale="0.817, 0.471, 0.816"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="-0.076, 0.379, 1.014" rotation_euler="0.000, 0.983, 0.000" scale="0.902, 0.902, 0.902"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.068, 0.379, 1.035" rotation_euler="0.000, -1.111, 0.000" scale="0.902, 0.902, 0.902"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.068, 0.379, 0.972" rotation_euler="0.000, -1.111, 0.000" scale="0.902, 0.902, 0.902"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="-0.076, 0.379, 0.951" rotation_euler="0.000, 0.983, 0.000" scale="0.902, 0.902, 0.902"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="-0.076, 0.379, 0.900" rotation_euler="0.000, 0.983, 0.000" scale="0.866, 0.866, 0.866"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="vlandia_twohanded_sword_c" old_prefab_name="" mobility="1">
+				<transform position="0.068, 0.379, 0.921" rotation_euler="0.000, -1.111, 0.000" scale="0.866, 0.866, 0.866"/>
+				<components>
+					<meta_mesh_component name="vlandia_twohanded_sword_c">
+						<mesh name="vlandia_twohanded_sword_c.lod1" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod2" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c.lod3" material="black_metal" factor="4286874756"/>
+						<mesh name="vlandia_twohanded_sword_c" material="weapon_iron" factor="4286874756"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.443, -0.367, 0.361" rotation_euler="-1.100, 0.000, 2.342" scale="0.517, 0.517, 0.517"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.4" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.10" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.384, 0.358, 0.255" rotation_euler="-1.114, 0.000, 0.633" scale="0.517, 0.517, 0.517"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.4" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.10" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.376, 0.358, 0.223" rotation_euler="-1.114, 0.000, -1.052" scale="0.517, 0.517, 0.517"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.4" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.10" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.415, -0.372, 0.280" rotation_euler="-1.114, 0.000, -2.389" scale="0.517, 0.517, 0.517"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.4" material="crude_iron"/>
+						<mesh name="weapon_heap_sword_a.10" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="training_sword" old_prefab_name="" mobility="1">
+				<transform position="0.418, -0.433, 0.705" rotation_euler="0.202, -3.142, -2.078" scale="0.722, 0.722, 0.722"/>
+				<components>
+					<meta_mesh_component name="twohanded_training_sword">
+						<mesh name="twohanded_training_sword" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="training_sword" old_prefab_name="" mobility="1">
+				<transform position="-0.419, -0.472, 0.698" rotation_euler="0.202, -3.142, 2.344" scale="0.722, 0.722, 0.722"/>
+				<components>
+					<meta_mesh_component name="twohanded_training_sword">
+						<mesh name="twohanded_training_sword" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="training_sword" old_prefab_name="" mobility="1">
+				<transform position="-0.401, 0.379, 0.572" rotation_euler="0.202, -3.142, 0.613" scale="0.722, 0.722, 0.722"/>
+				<components>
+					<meta_mesh_component name="twohanded_training_sword">
+						<mesh name="twohanded_training_sword" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="training_sword" old_prefab_name="" mobility="1">
+				<transform position="0.396, 0.376, 0.594" rotation_euler="0.202, -3.142, -1.068" scale="0.722, 0.722, 0.722"/>
+				<components>
+					<meta_mesh_component name="twohanded_training_sword">
+						<mesh name="twohanded_training_sword" material="crude_iron"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.326, -0.036, 0.315" rotation_euler="-0.775, -1.650, 3.071"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.509, -0.037, 0.310" rotation_euler="-0.797, -1.652, 3.069"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="-0.651, -0.159, 0.306" rotation_euler="-1.163, 3.110, 1.527"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.505, -0.241, 0.310" rotation_euler="-1.261, -0.058, -1.639"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="weapon_heap_sword_a" old_prefab_name="" mobility="1">
+				<transform position="0.009, 0.290, 1.366" rotation_euler="-1.571, 2.739, 2.758"/>
+				<components>
+					<meta_mesh_component name="weapon_heap_sword_a">
+						<mesh name="weapon_heap_sword_a.2" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.4" factor="4278190080"/>
+						<mesh name="weapon_heap_sword_a.10" factor="4278190080"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

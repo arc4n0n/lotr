@@ -1,0 +1,156 @@
+<prefabs>
+	<game_entity name="pb_chest" old_prefab_name="">
+		<tags>
+			<tag name="pb_chest"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.805"/>
+		<physics shape="bo_bd_chest_c" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="bd_chest_c"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_bed" old_prefab_name="">
+		<tags>
+			<tag name="pb_bed"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.787" scale="0.671, 0.671, 0.671"/>
+		<physics shape="bo_bed_tavern_e"/>
+		<components>
+			<meta_mesh_component name="bed_tavern_e"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_marker_training" old_prefab_name="">
+		<tags>
+			<tag name="pb_marker:training"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.248"/>
+	</game_entity>
+	<game_entity name="pb_marker_market" old_prefab_name="">
+		<tags>
+			<tag name="pb_marker:market"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, -0.393"/>
+	</game_entity>
+	<game_entity name="pb_marker_armory" old_prefab_name="">
+		<tags>
+			<tag name="pb_marker:armory"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, -0.393"/>
+	</game_entity>
+	<game_entity name="pb_test_spawner_cannon" old_prefab_name="">
+		<tags>
+			<tag name="pb_cannon"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="-0.036, -0.005, 2.993"/>
+		<physics shape="bo_bd_sturgia_table_workstation_a"/>
+		<components>
+			<meta_mesh_component name="bd_sturgia_table_workstation_a"/>
+		</components>
+		<children>
+			<game_entity name="empty_object" old_prefab_name="">
+				<tags>
+					<tag name="pb_cannon"/>
+				</tags>
+				<transform position="0.073, 0.041, 0.839" rotation_euler="0.000, 0.000, -1.714" scale="0.359, 0.359, 0.359"/>
+				<components>
+					<meta_mesh_component name="pb_cannon_mesh11"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_test_spawner_mangonel" old_prefab_name="">
+		<tags>
+			<tag name="pb_mangonel"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="-0.061, 0.012, 2.994"/>
+		<physics shape="bo_bd_sturgia_table_workstation_a"/>
+		<components>
+			<meta_mesh_component name="bd_sturgia_table_workstation_a"/>
+		</components>
+		<children>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="0.000, -0.039, 0.781" rotation_euler="0.000, 0.000, 0.003" scale="0.230, 0.230, 0.230"/>
+				<components>
+					<meta_mesh_component name="mangonel_b_mapicon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_test_spawner_cart" old_prefab_name="">
+		<tags>
+			<tag name="pb_cart"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="-0.026, -0.004, 2.993"/>
+		<physics shape="bo_bd_sturgia_table_workstation_a"/>
+		<components>
+			<meta_mesh_component name="bd_sturgia_table_workstation_a"/>
+		</components>
+		<children>
+			<game_entity name="bd_cart_a" old_prefab_name="">
+				<transform position="-0.016, -0.399, 0.774" rotation_euler="0.000, 0.000, -1.552" scale="0.321, 0.321, 0.321"/>
+				<physics shape="bo_bd_cart_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cart_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_bank_box" old_prefab_name="">
+		<tags>
+			<tag name="pb_bank"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.236" scale="1.316, 1.316, 1.316"/>
+		<physics shape="bo_chest_empire_b" override_material="fabric"/>
+		<components>
+			<meta_mesh_component name="chest_empire_b"/>
+		</components>
+		<children>
+			<game_entity name="lib_scroll_a" old_prefab_name="">
+				<transform position="0.288, -0.291, 0.016" rotation_euler="0.000, 0.000, -0.631" scale="0.760, 0.760, 0.760"/>
+				<components>
+					<meta_mesh_component name="lib_scroll_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="lib_book_open_a" old_prefab_name="">
+				<transform position="-0.279, -0.334, 0.011" rotation_euler="0.000, 0.000, -0.069" scale="0.760, 0.760, 0.760"/>
+				<components>
+					<meta_mesh_component name="lib_book_open_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_chest_locked" old_prefab_name="">
+		<tags>
+			<tag name="pb_chest"/>
+			<tag name="pb_town:2"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.805"/>
+		<physics shape="bo_bd_chest_c" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="bd_chest_c"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_arena_volumetric" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="pb_arena:volumetric"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="10.621, 13.635, 5.879"/>
+		<components>
+			<meta_mesh_component name="volume_box"/>
+		</components>
+		<scripts>
+			<script name="VolumeBox">
+				<variables>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,191 @@
+<prefabs>
+	<game_entity name="pb_cog_ship" old_prefab_name="">
+		<transform position="14.034, 5.293, 0.010" rotation_euler="0.000, 0.000, 3.141"/>
+		<scripts>
+			<script name="PBCog" />
+		</scripts>
+		<children>
+			<game_entity name="body" old_prefab_name="">
+				<transform position="-0.027, -0.012, 1.171" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_pb_ship_cog" override_material="wood">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="pb_ship_cog"/>
+				</components>
+			</game_entity>
+			<game_entity name="sail_down" old_prefab_name="" visible="false">
+				<tags>
+					<tag name="pb_sail_down"/>
+				</tags>
+				<transform position="0.130, -0.012, 1.253" rotation_euler="0.000, 0.000, 1.571"/>
+				<components>
+					<meta_mesh_component name="pb_ship_cog_sail"/>
+				</components>
+			</game_entity>
+			<game_entity name="sail_up" old_prefab_name="">
+				<tags>
+					<tag name="pb_sail_up"/>
+				</tags>
+				<transform position="-0.033, 0.195, 1.253" rotation_euler="0.000, 0.000, 1.571"/>
+				<components>
+					<meta_mesh_component name="pb_ship_cog_sail_upp"/>
+				</components>
+			</game_entity>
+			<game_entity name="driver_standpoint" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Driver"/>
+				</tags>
+				<transform position="0.634, -15.420, 5.418" rotation_euler="0.000, 0.000, 0.108"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="mast_standpoint" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Driver_Mast"/>
+				</tags>
+				<transform position="-0.671, -0.024, 3.186" rotation_euler="0.000, 0.000, -0.538"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="climbing_net" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="Ship_Climbing"/>
+				</tags>
+				<transform position="5.425, 2.354, -0.602" rotation_euler="0.000, 0.000, 1.604" scale="1.354, 1.002, 2.014"/>
+				<physics shape="bo_fishnet_d"/>
+				<components>
+					<meta_mesh_component name="fishnet_d"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="climbing_net" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="Ship_Climbing"/>
+				</tags>
+				<transform position="-5.647, 2.159, -0.602" rotation_euler="0.000, 0.000, -1.571" scale="1.354, 1.002, 2.014"/>
+				<physics shape="bo_fishnet_d"/>
+				<components>
+					<meta_mesh_component name="fishnet_d"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="cog_castle_ramp" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-0.016, -8.421, 6.151" rotation_euler="0.006, 0.834, 1.571" scale="1.373, 0.593, 1.316"/>
+				<physics shape="bo_castle_plank_ramp_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_ramp_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="cog_castle_ramp" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-0.072, 15.776, 5.498" rotation_euler="0.008, 0.841, -1.579" scale="0.960, 0.593, 0.230"/>
+				<physics shape="bo_castle_plank_ramp_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="castle_plank_ramp_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="inventory_standpoint" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Inventory"/>
+				</tags>
+				<transform position="-0.063, 5.828, 3.186" rotation_euler="0.000, 0.000, -3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

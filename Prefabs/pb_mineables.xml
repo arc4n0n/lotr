@@ -1,0 +1,129 @@
+<prefabs>
+	<game_entity name="pb_coal_mine" old_prefab_name="">
+		<transform position="10.205, 10.110, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_coal_mine_full" old_prefab_name="">
+				<tags>
+					<tag name="pb_mine:pb_coal"/>
+				</tags>
+				<transform position="0.023, 0.104, 0.066" rotation_euler="0.000, 0.000, -0.652"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore_coal" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, -3.046" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_coal_mine_depleted" old_prefab_name="" visible="false">
+				<transform position="0.087, 0.174, 0.075" rotation_euler="0.000, 0.000, -0.652"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.137" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_iron_mine" old_prefab_name="">
+		<transform position="95.964, 43.527, 38.008" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_iron_mine_full" old_prefab_name="">
+				<tags>
+					<tag name="pb_mine:pb_iron_ore"/>
+				</tags>
+				<transform position="0.148, -0.010, 0.099" rotation_euler="0.001, 0.014, -3.035"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore_iron" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.140" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_coal_mine_depleted" old_prefab_name="" visible="false">
+				<transform position="0.256, -0.003, 0.101" rotation_euler="0.001, 0.014, -3.035"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.137" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_gold_mine" old_prefab_name="">
+		<transform position="91.531, 42.391, 37.980" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_gold_mine_full" old_prefab_name="">
+				<tags>
+					<tag name="pb_mine:pb_gold_ore"/>
+				</tags>
+				<transform position="-0.004, 0.081, 0.109" rotation_euler="0.000, 0.000, 0.576"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore_gold" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.137" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_coal_mine_depleted" old_prefab_name="" visible="false">
+				<transform position="-0.097, 0.026, 0.089" rotation_euler="0.000, 0.000, 0.576"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.137" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_stone_mine" old_prefab_name="">
+		<tags>
+			<tag name="pb_mine:pb_stone"/>
+		</tags>
+		<transform position="98.732, 47.220, 36.564" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cave_rock_wall_a"/>
+		<components>
+			<meta_mesh_component name="cave_rock_wall_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_salt_mine" old_prefab_name="">
+		<tags>
+			<tag name="pb_mine:pb_salt"/>
+		</tags>
+		<transform position="106.467, 33.669, 41.475" rotation_euler="0.000, 0.000, 0.915"/>
+		<physics shape="bo_cave_desert_rock_wall_d" override_material="stone"/>
+		<components>
+			<meta_mesh_component name="cave_desert_rock_wall_d">
+				<mesh name="cave_desert_rock_wall_d" material="stone_white_a"/>
+				<mesh name="cave_desert_rock_wall_d.lod2" material="stone_white_a"/>
+				<mesh name="cave_desert_rock_wall_d.lod5" material="stone_white_a"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="pb_silver_mine" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_coal_mine_depleted" old_prefab_name="" visible="false">
+				<transform position="0.073, -0.159, 0.156" rotation_euler="-0.016, -0.002, 1.467"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.137" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_silver_mine_full" old_prefab_name="">
+				<tags>
+					<tag name="pb_mine:pb_silver_ore"/>
+				</tags>
+				<transform position="0.093, -0.053, 0.156" rotation_euler="-0.016, -0.002, 1.427"/>
+				<physics shape="bo_terrain_green_rock_b"/>
+				<components>
+					<meta_mesh_component name="pb_ore_silver" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 3.140" scale="1.000, 1.000, 1.000"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_mine_sulphur" old_prefab_name="">
+		<tags>
+			<tag name="pb_mine:pb_sulphur"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_terrain_rock_small_c"/>
+		<components>
+			<meta_mesh_component name="terrain_rock_small_c2">
+				<mesh name="terrain_rock_small_c2" material="rock_1" factor="4294955311"/>
+				<mesh name="terrain_rock_small_c2.lod3" material="rock_1" factor="4294955311"/>
+				<mesh name="terrain_rock_small_c2.lod4" material="rock_1" factor="4294955311"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+</prefabs>
+

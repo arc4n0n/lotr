@@ -1,0 +1,45 @@
+<prefabs>
+	<game_entity name="pb_lake" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="pb_lake"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="173.675, 173.675, 1.000"/>
+		<physics shape="bo_editor_plane">
+			<body_flags/>
+		</physics>
+		<components>
+			<meta_mesh_component name="editor_plane_high">
+				<mesh name="editor_plane_high" material="wat_puddle_clear" argument="1.000, 0.100, 1.270, 0.000" argument2="0.990, 0.170, 0.004, 0.500"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="water_body">
+				<variables>
+					<variable name="Water Prefab" value="Clear Puddle"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="pb_sea" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="pb_sea"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.004" scale="1873.368, 1984.563, 2.090"/>
+		<physics shape="bo_editor_plane">
+			<body_flags/>
+		</physics>
+		<components>
+			<meta_mesh_component name="editor_plane_high">
+				<mesh name="editor_plane_high" material="wat_puddle_clear" argument="1.000, 0.100, 1.270, 0.000" argument2="0.990, 0.170, 0.004, 0.500"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="water_body">
+				<variables>
+					<variable name="Water Prefab" value="Clear Puddle"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,393 @@
+<prefabs>
+	<game_entity name="pb_cabbage_crop" old_prefab_name="">
+		<transform position="2.589, 10.220, 0.249" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_cabbage_crop_grown" old_prefab_name="" visible="false">
+				<transform position="-0.040, -0.019, 0"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_cabbage_crop_growing" old_prefab_name="">
+				<transform position="-0.030, -0.003, 0"/>
+				<components>
+					<meta_mesh_component name="plant_cabbage" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_flax_crop" old_prefab_name="">
+		<transform position="10.049, 10.201, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_flax_crop_grown" old_prefab_name="" visible="false">
+				<transform position="0.003, 0.011, 0.000"/>
+				<components>
+					<meta_mesh_component name="wheats_d">
+						<mesh name="wheats_d" material="wheat_group_spring_flax_4x"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pb_flax_crop_growing" old_prefab_name="">
+				<transform position="0.003, 0.021, 0.000"/>
+				<components>
+					<meta_mesh_component name="flora_plant_d"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_watermelon_crop" old_prefab_name="">
+		<transform position="15.048, 2.707, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_watermelon_crop_grown" old_prefab_name="" visible="false">
+				<transform position="0.007, 0.006, 0.213"/>
+				<components>
+					<meta_mesh_component name="watermelon"/>
+				</components>
+				<children>
+					<game_entity name="foods_melon_a" old_prefab_name="">
+						<transform position="-1.365, -0.356, -0.232" rotation_euler="-0.491, 0.255, 0.871"/>
+						<components>
+							<meta_mesh_component name="foods_watermelon_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_melon_a" old_prefab_name="">
+						<transform position="1.632, 0.610, -0.214" rotation_euler="-0.293, 0.256, -3.120"/>
+						<components>
+							<meta_mesh_component name="foods_watermelon_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_melon_a" old_prefab_name="">
+						<transform position="-0.302, -0.028, -0.027" rotation_euler="-0.633, 2.047, 2.705"/>
+						<components>
+							<meta_mesh_component name="foods_watermelon_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pb_watermelon_crop_growing" old_prefab_name="">
+				<transform position="0.010, 0.002, 0.184" rotation_euler="0.000, 0.000, 0.030"/>
+				<components>
+					<meta_mesh_component name="watermelon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_garlic_crop" old_prefab_name="">
+		<transform position="2.561, 2.709, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_garlic_crop_growing" old_prefab_name="">
+				<transform position="-0.006, -0.013, -0.004"/>
+				<components>
+					<meta_mesh_component name="agriculture_chickpeas"/>
+				</components>
+				<children>
+					<game_entity name="kitchen_garlic_c" old_prefab_name="">
+						<transform position="0.003, 0.008, -0.025" rotation_euler="0.459, 0.015, -0.696"/>
+						<components>
+							<meta_mesh_component name="kitchen_garlic_c" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 0.000" scale="1.200, 1.200, 1.200"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pb_garlic_crop_grown" old_prefab_name="" visible="false">
+				<transform position="-0.021, -0.034, 0.000"/>
+				<components>
+					<meta_mesh_component name="agriculture_leek"/>
+				</components>
+				<children>
+					<game_entity name="kitchen_garlic_c" old_prefab_name="">
+						<transform position="0.015, 0.038, -0.029" rotation_euler="0.459, 0.015, -0.696"/>
+						<components>
+							<meta_mesh_component name="kitchen_garlic_c" position="0.000, 0.000, 0.000" rotation="0.000, 0.000, 0.000" scale="1.200, 1.200, 1.200"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_wheat_crop" old_prefab_name="">
+		<transform position="7.559, 10.208, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_wheat_crop_grown" old_prefab_name="" visible="false">
+				<components>
+					<meta_mesh_component name="wheats_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_wheat_crop_growing" old_prefab_name="">
+				<components>
+					<meta_mesh_component name="wheats_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_leek_crop" old_prefab_name="">
+		<transform position="5.030, 2.701, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_leek_crop_grown" old_prefab_name="" visible="false">
+				<transform position="-0.008, -0.035, -0.023"/>
+				<components>
+					<meta_mesh_component name="agriculture_leek"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_leek_crop_growing" old_prefab_name="">
+				<components>
+					<meta_mesh_component name="agriculture_chickpeas"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_melon_crop" old_prefab_name="">
+		<transform position="10.063, 2.788, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_melon_crop_grown" old_prefab_name="" visible="false">
+				<transform position="0.008, -0.092, 0.213"/>
+				<components>
+					<meta_mesh_component name="watermelon"/>
+				</components>
+				<children>
+					<game_entity name="foods_melon_a" old_prefab_name="">
+						<transform position="-1.365, -0.356, -0.232" rotation_euler="-0.491, 0.255, 0.871"/>
+						<components>
+							<meta_mesh_component name="foods_melon_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_melon_a" old_prefab_name="">
+						<transform position="1.632, 0.610, -0.214" rotation_euler="-0.293, 0.256, -3.120"/>
+						<components>
+							<meta_mesh_component name="foods_melon_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_melon_a" old_prefab_name="">
+						<transform position="-0.302, -0.028, -0.027" rotation_euler="-0.633, 2.047, 2.705"/>
+						<components>
+							<meta_mesh_component name="foods_melon_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="pb_melon_crop_growing" old_prefab_name="">
+				<transform position="0.025, -0.057, 0.167" rotation_euler="0.000, 0.000, 0.030"/>
+				<components>
+					<meta_mesh_component name="watermelon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_apple_tree" old_prefab_name="">
+		<tags>
+			<tag name="pb_apple_tree"/>
+		</tags>
+		<transform position="52.522, 88.433, 38.236" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_apple_tree_empty" old_prefab_name="">
+				<transform position="0.096, 0.243, 0.464"/>
+				<physics shape="bo_tree_olive_a"/>
+				<components>
+					<meta_mesh_component name="tree_olive_a">
+						<mesh name="tree_olive_a" material="worldmap_tree_poplar_01_sum_mat" argument="0.900, 0.000, 0.000, 0.000"/>
+						<mesh name="tree_olive_a.1" material="bark_acacia_a"/>
+						<mesh name="tree_olive_a.lod3" material="worldmap_tree_poplar_01_sum_mat" argument="0.900, 0.000, 0.000, 0.000"/>
+						<mesh name="tree_olive_a.lod5" material="worldmap_tree_poplar_01_sum_mat" argument="0.900, 0.000, 0.000, 0.000"/>
+						<mesh name="tree_olive_a.lod5.1" material="bark_acacia_a"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pb_apple_tree_fruits" old_prefab_name="">
+				<transform position="-0.144, -0.172, 3.710"/>
+				<children>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-1.174, -1.237, 0.621"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-0.826, 0.780, -0.173"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="0.481, 2.787, -0.481"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="0.481, 2.787, 0.139"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="2.717, 1.409, -0.236"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="1.131, 2.275, 0.047"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="3.043, -0.810, -0.315"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="1.316, -0.810, -0.249"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="0.213, -1.368, -0.353"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-1.189, -2.249, -0.278"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-1.087, -0.703, -0.278"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-1.087, 0.051, -0.173"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-1.233, 1.241, -0.278"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="pb_apples_resource" old_prefab_name="">
+						<transform position="-1.022, 2.035, -0.278"/>
+						<components>
+							<meta_mesh_component name="foods_apple_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_vineyard" old_prefab_name="">
+		<transform position="59.857, 54.174, 40.059" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="vineyard_end" old_prefab_name="">
+				<transform position="4.157, 0.080, 0.520"/>
+				<physics shape="bo_vineyard_end" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_vine_3" old_prefab_name="">
+				<tags>
+					<tag name="pb_vineyard"/>
+				</tags>
+				<transform position="1.284, 0.135, 1.065"/>
+				<physics shape="bo_vineyard_a3" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_b3">
+						<mesh name="vineyard_b3" argument="40.000, 0.020, 2.000, 20.000" argument2="1.000, 0.500, 0.750, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="pb_vine_1" old_prefab_name="">
+				<tags>
+					<tag name="pb_vineyard"/>
+				</tags>
+				<transform position="-1.606, -0.078, 0.839"/>
+				<physics shape="bo_vineyard_a1" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_b1"/>
+				</components>
+			</game_entity>
+			<game_entity name="pb_vine_2" old_prefab_name="">
+				<tags>
+					<tag name="pb_vineyard"/>
+				</tags>
+				<transform position="-4.466, -0.193, 0.556"/>
+				<physics shape="bo_vineyard_a2" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_b2"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_vineyard_2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, -0.177"/>
+		<children>
+			<game_entity name="vineyard_a2" old_prefab_name="">
+				<tags>
+					<tag name="pb_vineyard"/>
+				</tags>
+				<transform position="0.419, 1.650, 0.791" rotation_euler="0.000, 0.000, -1.638"/>
+				<physics shape="bo_vineyard_a2" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_a2"/>
+				</components>
+			</game_entity>
+			<game_entity name="vineyard_a2" old_prefab_name="">
+				<tags>
+					<tag name="pb_vineyard"/>
+				</tags>
+				<transform position="0.332, -1.220, 0.776" rotation_euler="0.000, 0.000, -1.720"/>
+				<physics shape="bo_vineyard_a2" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_a2"/>
+				</components>
+			</game_entity>
+			<game_entity name="vineyard_end" old_prefab_name="">
+				<transform position="0.081, -4.158, 0.809" rotation_euler="0.000, 0.000, 0.299"/>
+				<physics shape="bo_vineyard_end" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_end"/>
+				</components>
+			</game_entity>
+			<game_entity name="vineyard_a2" old_prefab_name="">
+				<tags>
+					<tag name="pb_vineyard"/>
+				</tags>
+				<transform position="0.555, 4.519, 0.804" rotation_euler="0.000, 0.000, -1.653"/>
+				<physics shape="bo_vineyard_a2" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="vineyard_a2"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_olive_tree_1" old_prefab_name="">
+		<tags>
+			<tag name="pb_olive_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.265"/>
+		<physics shape="bo_tree_olive_a"/>
+		<components>
+			<meta_mesh_component name="tree_olive_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="pb_olive_tree_2" old_prefab_name="">
+		<tags>
+			<tag name="pb_olive_tree"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, -2.881"/>
+		<physics shape="bo_tree_olive_b"/>
+		<components>
+			<meta_mesh_component name="tree_olive_b"/>
+		</components>
+	</game_entity>
+</prefabs>
+

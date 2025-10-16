@@ -1,0 +1,253 @@
+<prefabs>
+	<game_entity name="pb_ferry_log" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_movable" old_prefab_name="" mobility="1">
+				<transform position="0.742, 0.026, -0.130"/>
+				<scripts>
+					<script name="PBMoveableEntity">
+						<variables>
+							<variable name="MovementSpeed" value="0.500"/>
+							<variable name="StopOnEachPoint" value="false"/>
+							<variable name="StopOnUse" value="false"/>
+							<variable name="HidePointsOnEditor" value="false"/>
+							<variable name="TagBaseEntity" value="base"/>
+							<variable name="TagsChildrenPath" value="point1"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="base" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="base"/>
+						</tags>
+						<transform position="10.922, -0.053, -0.350" rotation_euler="0.000, 0.000, 1.571" scale="1.484, 1.484, 1.484"/>
+						<physics shape="bo_log_pine_i"/>
+						<components>
+							<meta_mesh_component name="log_pine_i"/>
+						</components>
+						<children>
+							<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+								<transform position="0.003, 9.984, -0.071" rotation_euler="0.000, 0.000, 0.000" scale="0.673, 1.694, 0.653"/>
+								<components>
+									<meta_mesh_component name="bd_cloth_hanging_rope"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+								<transform position="0.000, -9.974, -0.071" rotation_euler="0.000, 0.000, 0.000" scale="0.673, 1.694, 0.653"/>
+								<components>
+									<meta_mesh_component name="bd_cloth_hanging_rope"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="point1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="point1"/>
+						</tags>
+						<transform position="-11.557, -0.053, -0.350" rotation_euler="0.000, 0.000, 1.571" scale="1.484, 1.484, 1.484"/>
+						<physics shape="bo_log_pine_i"/>
+						<components>
+							<meta_mesh_component name="log_pine_i"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+				<transform position="0.663, 0.595, 1.011" rotation_euler="0.000, 0.000, 1.571" scale="1.000, 2.856, 0.969"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<children>
+					<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+						<transform position="0.015, 5.017, -1.924" rotation_euler="0.000, 0.000, -1.571" scale="0.350, 1.000, 1.031"/>
+						<physics shape="bo_bd_pole_3m" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="bd_pole_3m"/>
+						</components>
+						<scripts>
+							<script name="PBUseMoveableEntity">
+								<variables>
+									<variable name="RotateOnEditor" value="false"/>
+									<variable name="RotationSpeedOnUse" value="0.000"/>
+									<variable name="InstantUse" value="true"/>
+									<variable name="UseForward" value="true"/>
+									<variable name="UseBackward" value="true"/>
+									<variable name="DescriptionMessageText" value="Pull Log"/>
+									<variable name="MaxDistance" value="20.000"/>
+									<variable name="UsableOnMount" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+						<transform position="0.015, -5.009, -1.924" rotation_euler="0.000, 0.000, -1.571" scale="0.350, 1.000, 1.031"/>
+						<physics shape="bo_bd_pole_3m" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="bd_pole_3m"/>
+						</components>
+						<scripts>
+							<script name="PBUseMoveableEntity">
+								<variables>
+									<variable name="RotateOnEditor" value="false"/>
+									<variable name="RotationSpeedOnUse" value="0.000"/>
+									<variable name="InstantUse" value="true"/>
+									<variable name="UseForward" value="true"/>
+									<variable name="UseBackward" value="true"/>
+									<variable name="DescriptionMessageText" value="Pull Log"/>
+									<variable name="MaxDistance" value="20.000"/>
+									<variable name="UsableOnMount" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pb_ferry_platform" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="pb_movable" old_prefab_name="" mobility="1">
+				<transform position="0.742, 0.026, -0.130"/>
+				<scripts>
+					<script name="PBMoveableEntity">
+						<variables>
+							<variable name="MovementSpeed" value="0.500"/>
+							<variable name="StopOnEachPoint" value="false"/>
+							<variable name="StopOnUse" value="false"/>
+							<variable name="HidePointsOnEditor" value="false"/>
+							<variable name="TagBaseEntity" value="base"/>
+							<variable name="TagsChildrenPath" value="point1"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="base" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="base"/>
+						</tags>
+						<transform position="10.919, -1.542, -0.047" rotation_euler="0.000, 0.000, 0.016"/>
+						<physics shape="bo_wooden_platform_a"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_a"/>
+						</components>
+						<children>
+							<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+								<transform position="-14.788, 1.720, -0.408" rotation_euler="0.000, 0.000, 1.555" scale="0.999, 2.514, 0.969"/>
+								<components>
+									<meta_mesh_component name="bd_cloth_hanging_rope"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_cloth_hanging_rope" old_prefab_name="" mobility="1">
+								<transform position="14.826, 1.262, -0.408" rotation_euler="0.000, 0.000, 1.555" scale="0.999, 2.514, 0.969"/>
+								<components>
+									<meta_mesh_component name="bd_cloth_hanging_rope"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+								<transform position="-1.268, -2.145, -0.162" rotation_euler="0.000, -1.571, 0.000"/>
+								<physics shape="bo_bd_barrel_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_barrel_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+								<transform position="-1.268, 2.032, -0.162" rotation_euler="0.000, -1.571, 0.000"/>
+								<physics shape="bo_bd_barrel_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_barrel_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+								<transform position="2.574, -2.010, -0.162" rotation_euler="0.000, -1.571, 0.000"/>
+								<physics shape="bo_bd_barrel_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_barrel_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="bd_barrel_a" old_prefab_name="" mobility="1">
+								<transform position="2.574, 2.004, -0.162" rotation_euler="0.000, -1.571, 0.000"/>
+								<physics shape="bo_bd_barrel_a" override_material="wood"/>
+								<components>
+									<meta_mesh_component name="bd_barrel_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="point1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="point1"/>
+						</tags>
+						<transform position="-10.930, -1.540, -0.050" rotation_euler="0.000, 0.000, 0.016"/>
+						<physics shape="bo_wooden_platform_a"/>
+						<components>
+							<meta_mesh_component name="wooden_platform_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="0.663, 0.595, 1.011" rotation_euler="0.000, 0.000, 1.571" scale="1.000, 2.856, 0.969"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+				<children>
+					<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+						<transform position="0.015, 5.017, -1.924" rotation_euler="0.000, 0.000, -1.571" scale="0.350, 1.000, 1.031"/>
+						<physics shape="bo_bd_pole_3m" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="bd_pole_3m"/>
+						</components>
+						<scripts>
+							<script name="PBUseMoveableEntity">
+								<variables>
+									<variable name="RotateOnEditor" value="false"/>
+									<variable name="RotationSpeedOnUse" value="0.000"/>
+									<variable name="InstantUse" value="true"/>
+									<variable name="UseForward" value="true"/>
+									<variable name="UseBackward" value="true"/>
+									<variable name="DescriptionMessageText" value="Pull Log"/>
+									<variable name="MaxDistance" value="20.000"/>
+									<variable name="UsableOnMount" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="bd_pole_3m" old_prefab_name="" mobility="1">
+						<transform position="0.015, -5.009, -1.924" rotation_euler="0.000, 0.000, -1.571" scale="0.350, 1.000, 1.031"/>
+						<physics shape="bo_bd_pole_3m" override_material="stone"/>
+						<components>
+							<meta_mesh_component name="bd_pole_3m"/>
+						</components>
+						<scripts>
+							<script name="PBUseMoveableEntity">
+								<variables>
+									<variable name="RotateOnEditor" value="false"/>
+									<variable name="RotationSpeedOnUse" value="0.000"/>
+									<variable name="InstantUse" value="true"/>
+									<variable name="UseForward" value="true"/>
+									<variable name="UseBackward" value="true"/>
+									<variable name="DescriptionMessageText" value="Pull Log"/>
+									<variable name="MaxDistance" value="20.000"/>
+									<variable name="UsableOnMount" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

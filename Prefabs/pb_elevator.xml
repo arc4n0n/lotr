@@ -1,0 +1,177 @@
+<prefabs>
+  <game_entity name="pb_elevator" old_prefab_name="">
+    <transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" />
+    <children>
+      <game_entity name="pb_moveable" old_prefab_name="" mobility="1">
+        <tags>
+          <tag name="moveable" />
+        </tags>
+        <transform position="-0.133, -0.969, 1.383" />
+        <scripts>
+          <script name="PBMoveableEntity">
+            <variables>
+              <variable name="MovementSpeed" value="1.000" />
+              <variable name="StopOnEachPoint" value="true" />
+              <variable name="StopOnUse" value="false" />
+              <variable name="HidePointsOnEditor" value="false" />
+              <variable name="TagBaseEntity" value="base" />
+              <variable name="TagsChildrenPath" value="point1" />
+            </variables>
+          </script>
+        </scripts>
+        <children>
+          <game_entity name="base" old_prefab_name="" mobility="1">
+            <tags>
+              <tag name="base" />
+            </tags>
+            <transform position="0.971, -0.680, -1.892" />
+            <physics shape="bo_wooden_platform_2_a" />
+            <components>
+              <meta_mesh_component name="wooden_platform_2_a" />
+            </components>
+            <children>
+              <game_entity name="wooden_platform_plank_f_column" old_prefab_name="" mobility="1">
+                <transform position="-0.181, 0.036, 0.274" rotation_euler="0.000, 0.000, 3.044"
+                  scale="0.317, 0.369, 0.329" />
+                <physics shape="bo_wooden_platform_plank_f_column" />
+                <components>
+                  <meta_mesh_component name="wooden_platform_plank_f_column" />
+                </components>
+              </game_entity>
+              <game_entity name="wooden_platform_plank_f_column" old_prefab_name="" mobility="1">
+                <transform position="0.181, 0.000, 1.758" rotation_euler="0.000, 1.571, 3.044"
+                  scale="0.219, 0.212, 0.145" />
+                <physics shape="bo_wooden_platform_plank_f_column" />
+                <components>
+                  <meta_mesh_component name="wooden_platform_plank_f_column" />
+                </components>
+              </game_entity>
+              <game_entity name="bd_cart_wheel_b" old_prefab_name="" mobility="1">
+                <transform position="0.132, 0.010, 1.138" rotation_euler="0.000, 0.000, -1.668"
+                  scale="0.633, 0.585, 0.702" />
+                <physics shape="bo_bd_cart_wheel_b" />
+                <components>
+                  <meta_mesh_component name="bd_cart_wheel_b" />
+                </components>
+                <scripts>
+                  <script name="PBUseMoveableEntity">
+                    <variables>
+                      <variable name="RotationSpeedOnUse" value="0.000" />
+                      <variable name="InstantUse" value="false" />
+                      <variable name="UseForward" value="true" />
+                      <variable name="UseBackward" value="false" />
+                      <variable name="DescriptionMessageText" value="Raise" />
+                      <variable name="MaxDistance" value="15.000" />
+                      <variable name="UsableOnMount" value="false" />
+                      <variable name="NavMeshPrefabName" value="" />
+                    </variables>
+                  </script>
+                </scripts>
+              </game_entity>
+              <game_entity name="bd_cart_wheel_b" old_prefab_name="" mobility="1">
+                <transform position="-0.485, 0.068, 1.137" rotation_euler="0.000, 0.000, -1.668"
+                  scale="0.633, 0.585, 0.702" />
+                <physics shape="bo_bd_cart_wheel_b" />
+                <components>
+                  <meta_mesh_component name="bd_cart_wheel_b" />
+                </components>
+                <scripts>
+                  <script name="PBUseMoveableEntity">
+                    <variables>
+                      <variable name="RotationSpeedOnUse" value="0.000" />
+                      <variable name="InstantUse" value="false" />
+                      <variable name="UseForward" value="false" />
+                      <variable name="UseBackward" value="true" />
+                      <variable name="DescriptionMessageText" value="Lower" />
+                      <variable name="MaxDistance" value="15.000" />
+                      <variable name="UsableOnMount" value="false" />
+                      <variable name="NavMeshPrefabName" value="" />
+                    </variables>
+                  </script>
+                </scripts>
+              </game_entity>
+            </children>
+          </game_entity>
+          <game_entity name="point1" old_prefab_name="" mobility="1">
+            <tags>
+              <tag name="point1" />
+            </tags>
+            <transform position="0.971, -0.680, 7.863" />
+            <physics shape="bo_wooden_platform_2_a" />
+            <components>
+              <meta_mesh_component name="wooden_platform_2_a" />
+            </components>
+          </game_entity>
+        </children>
+      </game_entity>
+      <game_entity name="pb_use_moveable" old_prefab_name="">
+        <flags>
+          <flag name="record_to_scene_replay" value="true" />
+        </flags>
+        <transform position="4.600, -2.002, -0.147" rotation_euler="0.000, 0.000, 3.044" />
+        <children>
+          <game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+            <transform position="0.045, -0.003, -0.087" rotation_euler="0.000, 0.000, 0.000"
+              scale="0.317, 0.369, 0.329" />
+            <physics shape="bo_wooden_platform_plank_f_column" />
+            <components>
+              <meta_mesh_component name="wooden_platform_plank_f_column" />
+            </components>
+          </game_entity>
+          <game_entity name="wooden_platform_plank_f_column" old_prefab_name="">
+            <transform position="-0.318, -0.003, 1.397" rotation_euler="0.000, 1.571, 0.000"
+              scale="0.219, 0.212, 0.145" />
+            <physics shape="bo_wooden_platform_plank_f_column" />
+            <components>
+              <meta_mesh_component name="wooden_platform_plank_f_column" />
+            </components>
+          </game_entity>
+          <game_entity name="bd_cart_wheel_b" old_prefab_name="" mobility="1">
+            <transform position="-0.269, -0.008, 0.777" rotation_euler="0.000, 0.000, 1.571"
+              scale="0.633, 0.585, 0.702" />
+            <physics shape="bo_bd_cart_wheel_b" />
+            <components>
+              <meta_mesh_component name="bd_cart_wheel_b" />
+            </components>
+            <scripts>
+              <script name="PBUseMoveableEntity">
+                <variables>
+                  <variable name="RotationSpeedOnUse" value="0.000" />
+                  <variable name="InstantUse" value="false" />
+                  <variable name="UseForward" value="true" />
+                  <variable name="UseBackward" value="false" />
+                  <variable name="DescriptionMessageText" value="Raise" />
+                  <variable name="MaxDistance" value="15.000" />
+                  <variable name="UsableOnMount" value="false" />
+                  <variable name="NavMeshPrefabName" value="" />
+                </variables>
+              </script>
+            </scripts>
+          </game_entity>
+          <game_entity name="bd_cart_wheel_b" old_prefab_name="" mobility="1">
+            <transform position="0.351, -0.005, 0.776" rotation_euler="0.000, 0.000, 1.571"
+              scale="0.633, 0.585, 0.702" />
+            <physics shape="bo_bd_cart_wheel_b" />
+            <components>
+              <meta_mesh_component name="bd_cart_wheel_b" />
+            </components>
+            <scripts>
+              <script name="PBUseMoveableEntity">
+                <variables>
+                  <variable name="RotationSpeedOnUse" value="0.000" />
+                  <variable name="InstantUse" value="false" />
+                  <variable name="UseForward" value="false" />
+                  <variable name="UseBackward" value="true" />
+                  <variable name="DescriptionMessageText" value="Lower" />
+                  <variable name="MaxDistance" value="15.000" />
+                  <variable name="UsableOnMount" value="false" />
+                  <variable name="NavMeshPrefabName" value="" />
+                </variables>
+              </script>
+            </scripts>
+          </game_entity>
+        </children>
+      </game_entity>
+    </children>
+  </game_entity>
+</prefabs>

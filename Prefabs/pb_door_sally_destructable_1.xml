@@ -1,0 +1,111 @@
+<prefabs>
+	<game_entity name="pb_door_sally_destructable_1" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PBRepairableComponent">
+				<variables>
+					<variable name="RequiredResourceType" value="pb_hardwood"/>
+					<variable name="RequiredHitsToRepair" value="5"/>
+					<variable name="RequiredResourcesPerHit" value="2"/>
+					<variable name="RequiredEngineeringLevel" value="100"/>
+					<variable name="CombatCooldown" value="30.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="DestructableComponent">
+				<variables>
+					<variable name="DestructionStates" value="state1,state2,state3,state4"/>
+					<variable name="DestroyedByStoneOnly" value="false"/>
+					<variable name="CanBeDestroyedInitially" value="true"/>
+					<variable name="MaxHitPoint" value="100.000"/>
+					<variable name="DestroyOnAnyHit" value="false"/>
+					<variable name="PassHitOnToParent" value="false"/>
+					<variable name="ReferenceEntityTag" value=""/>
+					<variable name="HeavyHitParticlesTag" value=""/>
+					<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+					<variable name="ParticleEffectOnDestroy" value=""/>
+					<variable name="SoundEffectOnDestroy" value=""/>
+					<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+					<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+					<variable name="BattleSide" value="None"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="PBDoor">
+				<variables>
+					<variable name="State" value="Closed"/>
+					<variable name="OwningTeam" value="Defenders"/>
+					<variable name="SoundOnOpen" value="event:/mission/movement/foley/door_open"/>
+					<variable name="SoundOnClose" value="event:/mission/movement/foley/door_close"/>
+					<variable name="TotalRotationDegrees" value="90.000"/>
+					<variable name="RotationSpeed" value="1.000"/>
+					<variable name="MaxDistance" value="15.000"/>
+					<variable name="UsableOnMount" value="true"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="state1" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="reference"/>
+					<tag name="operational"/>
+				</tags>
+				<transform position="0.032, -0.001, 0.000"/>
+				<physics center_of_mass="-0.874, -0.029, 1.336"/>
+				<components>
+					<meta_mesh_component name="european_sally_door_a_state1"/>
+				</components>
+				<children>
+					<game_entity name="collider" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.002, 1.211" rotation_euler="1.571, -3.142, -3.142"/>
+						<physics shape="bo_european_sally_door_a_state1" override_material="wood_nonstick"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state2" old_prefab_name="" visible="false" mobility="1">
+				<transform position="0.052, 0.047, 0.000"/>
+				<components>
+					<meta_mesh_component name="european_sally_door_a_state2"/>
+				</components>
+				<children>
+					<game_entity name="collider" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.002, 1.211" rotation_euler="1.571, -3.142, -3.142"/>
+						<physics shape="bo_european_sally_door_a_state2" override_material="wood_nonstick"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state3" old_prefab_name="" visible="false" mobility="1">
+				<transform position="0.052, 0.047, 0.000"/>
+				<components>
+					<meta_mesh_component name="european_sally_door_a_state3"/>
+				</components>
+				<children>
+					<game_entity name="collider" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.002, 1.211" rotation_euler="1.571, -3.142, -3.142"/>
+						<physics shape="bo_european_sally_door_a_state3" override_material="wood_nonstick"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="state4" old_prefab_name="" visible="false" mobility="1">
+				<tags>
+					<tag name="pb_save_state_frame"/>
+				</tags>
+				<transform position="0.052, 0.047, 0.000"/>
+				<components>
+					<meta_mesh_component name="european_sally_door_a_state4" position="0.000, 1.200, 0.100" rotation="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.000"/>
+				</components>
+				<children>
+					<game_entity name="collider" old_prefab_name="" mobility="1">
+						<transform position="0.039, 0.118, 0.073" rotation_euler="-0.065, 1.571, 1.571"/>
+						<physics shape="bo_european_sally_door_a_state4" override_material="wood_nonstick"/>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,475 @@
+<prefabs>
+	<game_entity name="Empire_Drawbridge" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_empire_bridge_a_part_a"/>
+		<components>
+			<meta_mesh_component name="empire_bridge_a_part_a"/>
+		</components>
+		<children>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="-51.916, 0.045, 0.086" non_orthogonal_rotation_mat="-0.999999, -0.001477, 0.000000, 0.019476, -0.999810, 0.000000, 0.000000, 0.000000, 1.000000" scale="2.672, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="-39.176, 0.050, 0.046" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="39.387, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="28.897, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_floor_c" old_prefab_name="">
+				<transform position="13.429, 0.065, 5.024" rotation_euler="0.000, 0.000, 0.005" scale="2.970, 0.765, 1.006"/>
+				<physics shape="bo_module_european_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_floor_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_floor_c" old_prefab_name="">
+				<transform position="-13.549, 0.040, 5.024" rotation_euler="0.000, 0.000, 0.005" scale="2.970, 0.765, 1.006"/>
+				<physics shape="bo_module_european_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_floor_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="-15.158, 1.205, 8.268" non_orthogonal_rotation_mat="-0.199883, 0.974660, 0.100421, -0.943851, -0.041080, 0.327809, 0.621436, -0.008536, 0.783418" scale="0.600, 2.189, 1.130"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="-15.437, -1.181, 8.282" non_orthogonal_rotation_mat="0.246993, 0.967824, -0.048079, -0.940222, 0.042255, 0.337931, 0.630976, -0.011145, 0.775722" scale="0.604, 2.180, 1.134"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="15.569, 1.240, 8.234" non_orthogonal_rotation_mat="-0.229736, -0.972313, -0.042754, 0.944248, -0.038863, 0.326934, -0.617036, 0.010191, 0.786869" scale="0.602, 2.191, 1.127"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="14.328, -1.172, 7.931" non_orthogonal_rotation_mat="0.195621, -0.973616, 0.117488, 0.941472, 0.042683, 0.334377, -0.630782, 0.013103, 0.775849" scale="0.600, 2.183, 1.134"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-5.340, 1.920, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-10.890, 1.941, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-15.652, 1.960, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-21.030, 1.981, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-15.749, -1.833, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-21.128, -1.812, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-5.438, -1.873, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-10.988, -1.851, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="20.745, -1.917, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="5.055, -1.856, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="10.433, -1.877, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="15.195, -1.895, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="15.290, 1.829, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="20.841, 1.808, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="5.151, 1.869, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="10.529, 1.848, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="Bridge tower 1" old_prefab_name="">
+				<transform position="29.052, 0.035, 6.311" non_orthogonal_rotation_mat="0.048174, 0.998839, 0.000000, -0.999973, 0.007327, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.514, 1.508, 0.634"/>
+				<physics shape="bo_empire_gatehouse_b"/>
+				<components>
+					<meta_mesh_component name="empire_gatehouse_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_gatehouse_b" old_prefab_name="">
+				<transform position="-27.878, 0.042, 6.311" non_orthogonal_rotation_mat="0.048174, 0.998839, 0.000000, -0.999973, 0.007327, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.514, 1.508, 0.634"/>
+				<physics shape="bo_empire_gatehouse_b"/>
+				<components>
+					<meta_mesh_component name="empire_gatehouse_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="-67.159, 0.023, -2.225" non_orthogonal_rotation_mat="-0.999999, -0.001477, 0.000000, 0.019476, -0.999810, 0.000000, 0.000000, 0.000000, 1.000000" scale="2.672, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="-57.071, 0.053, -2.229" non_orthogonal_rotation_mat="-0.999999, -0.001477, 0.000000, 0.019477, -0.999810, 0.000000, 0.000000, 0.000000, 1.000000" scale="2.673, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="52.152, -0.009, 0.099" rotation_euler="0.000, 0.000, 0.000" scale="2.673, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="-28.172, 0.050, 0.046" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="67.352, -0.009, -2.209" rotation_euler="0.000, 0.000, 0.000" scale="2.673, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="PB_Empire_Drawbridge" old_prefab_name="">
+		<transform position="130.741, 26.278, -0.047" rotation_euler="0.000, 0.000, 0.010" scale="0.663, 1.701, 1.000"/>
+		<physics shape="bo_empire_bridge_a_part_a"/>
+		<components>
+			<meta_mesh_component name="empire_bridge_a_part_a"/>
+		</components>
+		<children>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="-51.916, 0.045, 0.086" non_orthogonal_rotation_mat="-0.999999, -0.001477, 0.000000, 0.019476, -0.999810, 0.000000, 0.000000, 0.000000, 1.000000" scale="2.672, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="-39.176, 0.050, 0.046" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="39.387, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="28.897, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_floor_c" old_prefab_name="">
+				<transform position="13.429, 0.065, 5.024" rotation_euler="0.000, 0.000, 0.005" scale="2.970, 0.765, 1.006"/>
+				<physics shape="bo_module_european_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_floor_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="module_european_floor_c" old_prefab_name="">
+				<transform position="-13.549, 0.040, 5.024" rotation_euler="0.000, 0.000, 0.005" scale="2.970, 0.765, 1.006"/>
+				<physics shape="bo_module_european_floor_c"/>
+				<components>
+					<meta_mesh_component name="module_european_floor_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="-15.158, 1.205, 8.268" non_orthogonal_rotation_mat="-0.199883, 0.974660, 0.100421, -0.943851, -0.041080, 0.327809, 0.621436, -0.008536, 0.783418" scale="0.600, 2.189, 1.130"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="-15.437, -1.181, 8.282" non_orthogonal_rotation_mat="0.246993, 0.967824, -0.048079, -0.940222, 0.042255, 0.337931, 0.630976, -0.011145, 0.775722" scale="0.604, 2.180, 1.134"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="15.569, 1.240, 8.234" non_orthogonal_rotation_mat="-0.229736, -0.972313, -0.042754, 0.944248, -0.038863, 0.326934, -0.617036, 0.010191, 0.786869" scale="0.602, 2.191, 1.127"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="14.328, -1.172, 7.931" non_orthogonal_rotation_mat="0.195621, -0.973616, 0.117488, 0.941472, 0.042683, 0.334377, -0.630782, 0.013103, 0.775849" scale="0.600, 2.183, 1.134"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-5.340, 1.920, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-10.890, 1.941, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-15.652, 1.960, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-21.030, 1.981, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-15.749, -1.833, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-21.128, -1.812, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-5.438, -1.873, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="-10.988, -1.851, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="20.745, -1.917, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="5.055, -1.856, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="10.433, -1.877, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="15.195, -1.895, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="15.290, 1.829, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="20.841, 1.808, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="5.151, 1.869, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="european_castle_wall_fence_a" old_prefab_name="">
+				<transform position="10.529, 1.848, 5.041" non_orthogonal_rotation_mat="0.999992, -0.003898, 0.000000, 0.025649, 0.999671, 0.000000, 0.000000, 0.000000, 1.000000" scale="1.508, 0.588, 1.000"/>
+				<physics shape="bo_european_castle_wall_fence_a" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="european_castle_wall_fence_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="Bridge tower 1" old_prefab_name="">
+				<transform position="29.052, 0.035, 6.311" non_orthogonal_rotation_mat="0.048174, 0.998839, 0.000000, -0.999973, 0.007327, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.514, 1.508, 0.634"/>
+				<physics shape="bo_empire_gatehouse_b"/>
+				<components>
+					<meta_mesh_component name="empire_gatehouse_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_gatehouse_b" old_prefab_name="">
+				<transform position="-27.878, 0.042, 6.311" non_orthogonal_rotation_mat="0.048174, 0.998839, 0.000000, -0.999973, 0.007327, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.514, 1.508, 0.634"/>
+				<physics shape="bo_empire_gatehouse_b"/>
+				<components>
+					<meta_mesh_component name="empire_gatehouse_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="-67.159, 0.023, -2.225" non_orthogonal_rotation_mat="-0.999999, -0.001477, 0.000000, 0.019476, -0.999810, 0.000000, 0.000000, 0.000000, 1.000000" scale="2.672, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="-57.071, 0.053, -2.229" non_orthogonal_rotation_mat="-0.999999, -0.001477, 0.000000, 0.019477, -0.999810, 0.000000, 0.000000, 0.000000, 1.000000" scale="2.673, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="52.152, -0.009, 0.099" rotation_euler="0.000, 0.000, 0.000" scale="2.673, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_a_part_a" old_prefab_name="">
+				<transform position="-28.172, 0.050, 0.046" rotation_euler="0.000, 0.000, 0.000" scale="1.929, 1.000, 1.000"/>
+				<physics shape="bo_empire_bridge_a_part_a"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_a_part_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_b_part_c" old_prefab_name="">
+				<transform position="67.352, -0.009, -2.209" rotation_euler="0.000, 0.000, 0.000" scale="2.673, 0.588, 1.000"/>
+				<physics shape="bo_empire_bridge_b_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_b_part_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+
