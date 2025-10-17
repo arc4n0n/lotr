@@ -25114,5 +25114,983 @@
 			</game_entity>
 		</children>
 	</game_entity>
+	<game_entity name="gondor_castle_wall_d_l2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="empire_castle_wall_d_l2" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_d_l2">
+				<physics shape="bo_empire_castle_wall_d_l2"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_d_l2">
+						<mesh name="empire_castle_wall_d_l2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.5" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.6" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.0" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.1" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod4.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod5.0" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod5.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod5.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod5.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod6.0" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l2.lod6.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l2_04"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l2_04">
+								<mesh name="empire_castle_wall_d_l2_04.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_04.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod3.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_04.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.355, -1.268, 9.515"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l2_03"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l2_03">
+								<mesh name="empire_castle_wall_d_l2_03.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_03.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_03.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.139, -1.319, 9.529"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l2_02"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l2_02">
+								<mesh name="empire_castle_wall_d_l2_02.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_02.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_02.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.000, -1.354, 9.431"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l2_01"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l2_01">
+								<mesh name="empire_castle_wall_d_l2_01.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_01.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l2_01.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.240, -1.395, 9.520"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="gondor_castle_wall_a_l2" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="empire_castle_wall_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_a_l2">
+				<physics shape="bo_empire_castle_wall_a_l2"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_a_l2">
+						<mesh name="empire_castle_wall_a_l2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.5" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.6" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.0" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod4.6" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod5.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod5.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod5.5" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod6.0" material="waterfall_dust" argument2="1.500, 1.500, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_a_l2.lod6.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_7" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_07"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_07">
+								<mesh name="empire_castle_wall_a_l2_07.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_07.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_07.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="8.771, -1.445, 9.362"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_6" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_06"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_06">
+								<mesh name="empire_castle_wall_a_l2_06.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_06.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_06.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.713, -1.400, 9.433"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_5" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_05"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_05">
+								<mesh name="empire_castle_wall_a_l2_05.0" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_05.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod3.0" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod5.0" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod5.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod6.0" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_05.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.425, -1.425, 9.638"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_04"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_04">
+								<mesh name="empire_castle_wall_a_l2_04.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_04.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod3.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_04.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.712, -1.313, 9.534"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_03"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_03">
+								<mesh name="empire_castle_wall_a_l2_03.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_03.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_03.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.778, -1.364, 9.511"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_02"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_02">
+								<mesh name="empire_castle_wall_a_l2_02.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_02.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod3.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod3.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod5.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod6.1" material="waterfall_dust"/>
+								<mesh name="empire_castle_wall_a_l2_02.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-7.045, -1.327, 9.461"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_a_l2_01"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_a_l2_01">
+								<mesh name="empire_castle_wall_a_l2_01.0" material="waterfall_dust" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.2" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod3.0" material="waterfall_dust" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod3.2" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod3.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod5.0" material="waterfall_dust" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod5.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod6.0" material="waterfall_dust" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_a_l2_01.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l2"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-10.251, -1.392, 9.565"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="gondor_castle_wall_d_l3" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="gondor_castle_wall_d_l3" old_prefab_name="" occlusion_body_name="bo_occ_empire_castle_wall_d_l3">
+				<physics shape="bo_empire_castle_wall_d_l3"/>
+				<components>
+					<meta_mesh_component name="empire_castle_wall_d_l3">
+						<mesh name="empire_castle_wall_d_l3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod1.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod2.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod4.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod4.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod4.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod4.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod4.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod4.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod5.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod5.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod5.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod5.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod5.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod5.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_castle_wall_d_l3.lod6.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l3_01"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l3_01">
+								<mesh name="empire_castle_wall_d_l3_01.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod2.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod2.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod2.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod2.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod3.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod3.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod4.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod4.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod4.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod4.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod4.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod4.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod6.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_01.lod6.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.414, -1.387, 12.186"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l3_02"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l3_02">
+								<mesh name="empire_castle_wall_d_l3_02.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod2.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod4.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod4.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod4.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_02.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.916, -1.346, 12.097"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l3_03"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l3_03">
+								<mesh name="empire_castle_wall_d_l3_03.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod2.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod2.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod3.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod4.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod4.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod4.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod4.5" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_03.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.245, -1.311, 12.195"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+						<physics shape="bo_empire_castle_wall_d_l3_04"/>
+						<components>
+							<meta_mesh_component name="empire_castle_wall_d_l3_04">
+								<mesh name="empire_castle_wall_d_l3_04.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.5" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.7" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod2.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod2.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod2.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod2.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod2.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod3.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod3.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod3.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod3.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod3.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod4.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod4.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod4.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod4.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod4.6" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod6.0" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod6.1" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod6.2" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod6.3" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="empire_castle_wall_d_l3_04.lod6.4" material="empire_marble_floor_a" argument="1.000, 1.000, 0.000, 0.000" argument2="1.000, 1.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_empire_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="4.995, -1.260, 12.181"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
 </prefabs>
 
