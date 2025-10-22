@@ -1,4 +1,4 @@
-# Gondor Mordor
+# [Gondor Mordor](https://drive.google.com/file/d/1VFlqfTNp589weWzGSzM_CbEIwJOrExNQ/view?usp=sharing)
 
 ![Alt text](/mt_doom.gif?raw=true "LOTR Map")
 
@@ -51,3 +51,6 @@
 26. Uruk Camp
 27. River Town
 28. Harlond
+
+
+# [Isengard Rohan](https://drive.google.com/file/d/1iymvT9Yavc9gJwrLP3y-mUfOpMaEcVaw/view?usp=sharing)
