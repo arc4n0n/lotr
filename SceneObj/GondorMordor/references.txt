@@ -1,4 +1,4 @@
-1658
+1659
 mesh agriculture_chickpeas
 mesh agriculture_leek
 mesh animation_stand_arrow_blue
@@ -1084,7 +1084,6 @@ mesh mail_mitten_c
 mesh map_mountain_rock_d_snw
 mesh map_rock_new_c
 mesh map_rock_new_d
-mesh map_rock_new_e
 mesh mat_carpet_i
 mesh mat_fur_a
 mesh mat_fur_b
@@ -1602,12 +1601,14 @@ prefab ai_barrier_l
 prefab ai_barrier_r
 prefab clean
 prefab distance_holder
+prefab fog_2
 prefab fork_holder
 prefab ground_align
 prefab initial_wait_pos
 prefab ladder_down_state
 prefab ladder_up_state
 prefab ramp
+prefab stairs_short_a
 prefab use_push
 prefab wait_pos_ground
 prefab wheel_back
