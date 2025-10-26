@@ -26096,71 +26096,324 @@
 		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
 		<components>
 			<particle_system_instanced_component>
-				<effect base_effect="{39CDECB3-046B-4A8B-8E71-533BB7F6C882}">
+				<effect base_effect="{B194670A-B6E6-4F63-9EF9-B4C67F5DC68B}">
 					<emitter_overrides>
 						<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
-							<flags>
-								<flag name="spherical_normals" value="true"/>
-								<flag name="select_random_sprite" value="true"/>
-							</flags>
 							<parameters>
-								<parameter name="skew_with_particle_velocity_coef" value="0.000"/>
-								<parameter name="emit_box_size" value="0.000, 0.000, 0.000"/>
-								<parameter name="emit_disc_radius" value="300.000"/>
-								<parameter name="gravity" value="3.000, 0.000, 9.000"/>
-								<parameter name="texture_sprite_count" value="2, 2"/>
-								<parameter name="texture_sprite_frame_count" value="1"/>
-								<parameter name="texture_sprite_frame_rate" value="1.000"/>
-								<parameter name="diffuse_multiplier" value="1.000"/>
-								<parameter name="particle_size_curve_op" value="add"/>
-								<parameter name="emit_volume_type" value="disc"/>
-								<parameter name="damping" base="0.650" bias="0.000"/>
-								<parameter name="angular_damping" base="0.450" bias="0.000"/>
-								<parameter name="particle_life" base="10.000" bias="2.000"/>
-								<parameter name="emission_rate" base="15.000" bias="0.000"/>
-								<parameter name="emit_velocity_x" base="0.000" bias="5.000"/>
-								<parameter name="emit_velocity_y" base="0.000" bias="5.000"/>
-								<parameter name="emit_velocity_z" base="5.000" bias="5.000"/>
-								<parameter name="emit_rotation_speed" base="0.000" bias="28.650"/>
-								<parameter name="wind_effect" base="1.000" bias="0.000">
-									<curve name="particle_life" version="1" default="1.000" curve_multiplier="1.000">
-										<keys>
-											<key time="0.000" value="1.000" tangent="0.007, 0.000"/>
-											<key time="0.034" value="1.000" tangent="-0.007, 0.000"/>
-										</keys>
-									</curve>
-								</parameter>
-								<parameter name="particle_size" base="2.500" bias="2.500">
-									<curve name="particle_life" version="1" default="1.000" curve_multiplier="40.000">
-										<keys>
-											<key time="0.000" value="0.187" tangent="0.001, 0.000"/>
-											<key time="0.034" value="1.000" tangent="-0.007, 0.000"/>
-										</keys>
-									</curve>
-								</parameter>
-								<parameter name="material_guid" value="{489D29D2-AD3E-4070-A274-7DEE7235EC77}"/>
-								<parameter name="particle_color">
-									<color>
-										<keys>
-											<key time="0.100" value="0.488, 0.488, 0.488"/>
-											<key time="0.900" value="0.523, 0.523, 0.523"/>
-										</keys>
-									</color>
-									<alpha>
-										<keys>
-											<key time="0.000" value="0.000"/>
-											<key time="0.100" value="0.137"/>
-											<key time="0.700" value="0.078"/>
-											<key time="1.000" value="0.000"/>
-										</keys>
-									</alpha>
-								</parameter>
+								<parameter name="quad_bias" value="0.350, 0.350"/>
+								<parameter name="emission_rate" base="35.000" bias="0.000"/>
 							</parameters>
 						</emitter>
 					</emitter_overrides>
 				</effect>
 			</particle_system_instanced_component>
 		</components>
+	</game_entity>
+	<game_entity name="orc_crane" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, -0.085"/>
+		<children>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.169, -0.531, -0.929" rotation_euler="0.000, 0.000, 0.000" scale="1.513, 1.513, 1.513"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.169, 0.757, 6.971" rotation_euler="1.571, 0.000, 0.000" scale="1.513, 1.513, 1.513"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.157, -0.624, 2.612" rotation_euler="0.520, 0.000, 0.000" scale="1.513, 1.513, 0.983"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.169, 5.207, 3.067" rotation_euler="1.571, 0.000, 0.000" scale="1.513, 1.513, 1.095"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.169, 2.301, 2.900" rotation_euler="0.524, -3.142, -3.142" scale="1.513, 1.513, 1.095"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.169, 2.796, 2.862" rotation_euler="-0.523, -3.142, -3.142" scale="1.513, 1.513, 1.095"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cart_wheel_a" old_prefab_name="">
+				<transform position="-0.399, 2.650, 0.671" rotation_euler="0.000, 0.000, -1.579" scale="2.943, 2.943, 2.943"/>
+				<physics shape="bo_bd_cart_wheel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cart_wheel_a">
+						<mesh name="bd_cart_wheel_a.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.2" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod2.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod2.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod2.2" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod3.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod3.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod3.2" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod4.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod4.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod5.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod5.1" factor="4284703587"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cart_wheel_a" old_prefab_name="">
+				<transform position="-1.240, 2.656, 0.671" rotation_euler="0.000, 0.000, -1.579" scale="2.943, 2.943, 2.943"/>
+				<physics shape="bo_bd_cart_wheel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_cart_wheel_a">
+						<mesh name="bd_cart_wheel_a.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.2" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod2.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod2.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod2.2" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod3.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod3.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod3.2" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod4.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod4.1" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod5.0" factor="4284703587"/>
+						<mesh name="bd_cart_wheel_a.lod5.1" factor="4284703587"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-1.818, 2.796, 2.862" rotation_euler="-0.523, -3.142, -3.142" scale="1.513, 1.513, 1.095"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-1.818, 2.301, 2.900" rotation_euler="0.524, -3.142, -3.142" scale="1.513, 1.513, 1.095"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284769380"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" factor="4284769380"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_rope_sturgia_a" old_prefab_name="">
+				<transform position="0.155, -6.993, 7.155" rotation_euler="0.000, 0.000, 1.646" scale="1.513, 1.513, 1.513"/>
+				<components>
+					<meta_mesh_component name="bd_rope_sturgia_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="0.166, -2.904, 7.615" rotation_euler="0.000, 3.142, 3.138" scale="0.824, 0.824, 0.824"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_cloth_hanging_rope" old_prefab_name="">
+				<transform position="-0.375, 3.005, 5.622" rotation_euler="0.872, -3.142, -2.837" scale="0.824, 0.471, 0.824"/>
+				<components>
+					<meta_mesh_component name="bd_cloth_hanging_rope"/>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_platform_wooden_c" old_prefab_name="">
+				<transform position="-0.616, 0.166, 0.148" rotation_euler="0.000, 0.000, -1.559" scale="1.370, 1.370, 1.370"/>
+				<physics shape="bo_khuzait_platform_wooden_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="khuzait_platform_wooden_c">
+						<mesh name="khuzait_platform_wooden_c.2" factor="4285690482"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_platform_wooden_c" old_prefab_name="">
+				<transform position="-0.657, 3.582, 0.168" rotation_euler="0.000, 0.000, 1.581" scale="1.370, 1.370, 1.370"/>
+				<physics shape="bo_khuzait_platform_wooden_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="khuzait_platform_wooden_c">
+						<mesh name="khuzait_platform_wooden_c.2" factor="4285690482"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="khuzait_platform_wooden_c" old_prefab_name="">
+				<transform position="0.206, -7.078, 5.353" rotation_euler="0.000, 0.000, 0.096" scale="1.000, 0.751, 1.000"/>
+				<physics shape="bo_khuzait_platform_wooden_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="khuzait_platform_wooden_c">
+						<mesh name="khuzait_platform_wooden_c.2" factor="4285690482"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="">
+				<transform position="0.766, -7.717, 5.405" rotation_euler="0.000, 0.000, 0.684"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a">
+						<mesh name="crate_a.0" factor="4287072135"/>
+						<mesh name="crate_a.1" factor="4287072135"/>
+						<mesh name="crate_a.lod1.0" factor="4287072135"/>
+						<mesh name="crate_a.lod1.1" factor="4287072135"/>
+						<mesh name="crate_a.lod2.0" factor="4287072135"/>
+						<mesh name="crate_a.lod2.1" factor="4287072135"/>
+						<mesh name="crate_a.lod4" factor="4287072135"/>
+						<mesh name="crate_a.lod3.0" factor="4287072135"/>
+						<mesh name="crate_a.lod3.1" factor="4287072135"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="">
+				<transform position="-0.371, -6.477, 5.405" rotation_euler="0.000, 0.000, -3.069"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a">
+						<mesh name="crate_a.0" factor="4287072135"/>
+						<mesh name="crate_a.1" factor="4287072135"/>
+						<mesh name="crate_a.lod1.0" factor="4287072135"/>
+						<mesh name="crate_a.lod1.1" factor="4287072135"/>
+						<mesh name="crate_a.lod2.0" factor="4287072135"/>
+						<mesh name="crate_a.lod2.1" factor="4287072135"/>
+						<mesh name="crate_a.lod4" factor="4287072135"/>
+						<mesh name="crate_a.lod3.0" factor="4287072135"/>
+						<mesh name="crate_a.lod3.1" factor="4287072135"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a_empty" old_prefab_name="">
+				<transform position="0.800, -6.465, 5.405" rotation_euler="0.000, 0.000, 0.437"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a_empty">
+						<mesh name="crate_a_empty.lod1.0" factor="4285690482"/>
+						<mesh name="crate_a_empty.lod1.1" factor="4285690482"/>
+						<mesh name="crate_a_empty.0" factor="4285690482"/>
+						<mesh name="crate_a_empty.1" factor="4285690482"/>
+						<mesh name="crate_a_empty.lod2.0" factor="4285690482"/>
+						<mesh name="crate_a_empty.lod2.1" factor="4285690482"/>
+						<mesh name="crate_a_empty.lod4" factor="4285690482"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="">
+				<transform position="-0.463, -7.683, 5.405" rotation_euler="0.000, 0.000, 3.046"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a">
+						<mesh name="crate_a.0" factor="4287072135"/>
+						<mesh name="crate_a.1" factor="4287072135"/>
+						<mesh name="crate_a.lod1.0" factor="4287072135"/>
+						<mesh name="crate_a.lod1.1" factor="4287072135"/>
+						<mesh name="crate_a.lod2.0" factor="4287072135"/>
+						<mesh name="crate_a.lod2.1" factor="4287072135"/>
+						<mesh name="crate_a.lod4" factor="4287072135"/>
+						<mesh name="crate_a.lod3.0" factor="4287072135"/>
+						<mesh name="crate_a.lod3.1" factor="4287072135"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_horn" old_prefab_name="">
+				<transform position="0.156, -7.449, 7.362" rotation_euler="-0.364, 1.112, 1.393" scale="5.479, 5.479, 5.479"/>
+				<components>
+					<meta_mesh_component name="kitchen_horn">
+						<mesh name="kitchen_horn" factor="4285361517"/>
+						<mesh name="kitchen_horn.lod2" factor="4285361517"/>
+						<mesh name="kitchen_horn.lod1" factor="4285361517"/>
+						<mesh name="kitchen_horn.lod3" factor="4285361517"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="kitchen_horn" old_prefab_name="">
+				<transform position="0.207, -0.286, 7.722" rotation_euler="-0.191, 2.559, 1.941" scale="5.479, 5.479, 5.479"/>
+				<components>
+					<meta_mesh_component name="kitchen_horn">
+						<mesh name="kitchen_horn" factor="4285361517"/>
+						<mesh name="kitchen_horn.lod2" factor="4285361517"/>
+						<mesh name="kitchen_horn.lod1" factor="4285361517"/>
+						<mesh name="kitchen_horn.lod3" factor="4285361517"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_c" old_prefab_name="">
+				<transform position="1.804, 1.657, -0.484" rotation_euler="0.000, 0.000, 1.551" scale="1.353, 1.353, 1.353"/>
+				<physics shape="bo_bd_wood_heap_c"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_c" old_prefab_name="">
+				<transform position="-2.862, 1.665, -0.323" rotation_euler="0.000, 0.000, 1.551" scale="1.353, 1.353, 1.353"/>
+				<physics shape="bo_bd_wood_heap_c"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_c"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_wood_heap_d" old_prefab_name="">
+				<transform position="0.509, -1.625, -0.258" rotation_euler="0.000, 0.000, 1.584" scale="1.559, 1.559, 1.559"/>
+				<physics shape="bo_bd_wood_heap_d"/>
+				<components>
+					<meta_mesh_component name="bd_wood_heap_d">
+						<mesh name="bd_wood_heap_d.0" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.1" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.2" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.3" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod2.0" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod2.1" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod2.2" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod2.3" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod4.0" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod4.1" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod4.2" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod4.3" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod5.0" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod5.1" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod5.2" factor="4286541662"/>
+						<mesh name="bd_wood_heap_d.lod5.3" factor="4286541662"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
 	</game_entity>
 </prefabs>
 
