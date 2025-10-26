@@ -1,4 +1,4 @@
-1659
+1660
 mesh agriculture_chickpeas
 mesh agriculture_leek
 mesh animation_stand_arrow_blue
@@ -385,6 +385,7 @@ mesh bd_wood_c
 mesh bd_wood_heap_a
 mesh bd_wood_heap_b
 mesh bd_wood_heap_c
+mesh bd_wood_heap_d
 mesh bd_wood_heap_f
 mesh beards_d_r_b
 mesh beards_d_s_b
@@ -988,6 +989,7 @@ mesh khuzait_noble_pommel_2
 mesh khuzait_noble_pommel_4
 mesh khuzait_pit_a
 mesh khuzait_platform_wooden_a
+mesh khuzait_platform_wooden_c
 mesh khuzait_pommel_1
 mesh khuzait_pommel_2
 mesh khuzait_pommel_6
@@ -1601,14 +1603,13 @@ prefab ai_barrier_l
 prefab ai_barrier_r
 prefab clean
 prefab distance_holder
-prefab fog_2
 prefab fork_holder
 prefab ground_align
 prefab initial_wait_pos
 prefab ladder_down_state
 prefab ladder_up_state
 prefab ramp
-prefab stairs_short_a
+prefab terrain_green_rock_a
 prefab use_push
 prefab wait_pos_ground
 prefab wheel_back
