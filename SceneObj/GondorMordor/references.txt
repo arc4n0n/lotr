@@ -1,4 +1,4 @@
-1657
+1651
 mesh agriculture_chickpeas
 mesh agriculture_leek
 mesh animation_stand_arrow_blue
@@ -22,7 +22,6 @@ mesh arabian_platform_wooden_a
 mesh arabian_platform_wooden_c
 mesh arabian_tower_tent_a
 mesh arabian_waterwell_a
-mesh archer_target_stick
 mesh arena_arabian_wall_a
 mesh arena_arabian_window_a
 mesh argonath 
@@ -451,7 +450,6 @@ mesh cave_wall_a
 mesh chest_empire_a
 mesh chest_empire_b
 mesh chicken_raw
-mesh circle_plane
 mesh civilian_ladder_4m
 mesh civilian_ladder_5m
 mesh civilian_ladder_6m
@@ -648,7 +646,6 @@ mesh empire_keep_a_wall_b
 mesh empire_keep_a_wall_d
 mesh empire_keep_a_wall_e
 mesh empire_keep_a_wall_end_a
-mesh empire_keep_b_arch_a
 mesh empire_keep_b_arch_b
 mesh empire_keep_b_arch_c
 mesh empire_keep_b_side_building_m
@@ -1129,7 +1126,6 @@ mesh merchandise_stones
 mesh merchandise_velvet
 mesh merchandise_wooden_stick
 mesh merchandise_wool
-mesh mi_saddle_horse_b
 mesh mi_salt_mine_a
 mesh mi_salt_mine_b
 mesh mi_salt_mine_c
@@ -1470,8 +1466,6 @@ mesh torch_candle_a
 mesh torch_candle_b
 mesh torch_candle_c
 mesh torch_chandelier
-mesh torch_flame_base
-mesh torch_g
 mesh torch_long_c
 mesh torch_table_b
 mesh torch_wall_c
