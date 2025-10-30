@@ -1,4 +1,4 @@
-1651
+1667
 mesh agriculture_chickpeas
 mesh agriculture_leek
 mesh animation_stand_arrow_blue
@@ -105,7 +105,6 @@ mesh aserai_dungeon_cell_bars_opened
 mesh aserai_female_civil_hscarf
 mesh aserai_female_civil_hscarf_b
 mesh aserai_female_costume_shoe
-mesh aserai_grandbazaar_corner_shop_door
 mesh aserai_grandbazaar_corridor_a
 mesh aserai_grandbazaar_entry
 mesh aserai_grandbazaar_floor_a
@@ -1385,7 +1384,6 @@ mesh sturgia_castle_stairs_a_l3
 mesh sturgia_castle_stairs_b_l2
 mesh sturgia_castle_stairs_c_l2
 mesh sturgia_castle_tower_round_a_l1
-mesh sturgia_castle_tower_round_a_l2
 mesh sturgia_castle_tower_round_a_l3
 mesh sturgia_castle_tower_round_a_l3_01
 mesh sturgia_castle_tower_round_a_l3_02
@@ -1593,14 +1591,32 @@ mesh wooden_platform_plank_f_column
 mesh wooden_platform_stairs_a
 prefab ai_barrier_l
 prefab ai_barrier_r
+prefab aserai_grandbazaar_corner_shop_door
+prefab barad_dur
+prefab choker
 prefab clean
 prefab distance_holder
+prefab empire_bridge_c_part_c
+prefab empire_keep_a_wall_b
+prefab empire_keep_a_wall_end_a
+prefab eye_of_sauron
+prefab fire_light
 prefab fork_holder
 prefab ground_align
+prefab heater_shield_k
 prefab initial_wait_pos
 prefab ladder_down_state
 prefab ladder_up_state
+prefab module_european_house_end_attick_d
 prefab ramp
+prefab rock_cliff_bridge_a
+prefab sound
+prefab sound_reverb
+prefab sturgia_castle_stairs_a_l3
+prefab sturgia_castle_stairs_a_l3_stairs
+prefab sturgia_castle_tower_round_a_l1
+prefab sturgia_castle_tower_round_a_l2
+prefab sturgia_castle_tower_stair_l1
 prefab use_push
 prefab wait_pos_ground
 prefab wheel_back
