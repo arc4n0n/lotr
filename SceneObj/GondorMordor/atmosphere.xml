@@ -28,7 +28,7 @@
 		<value name="fog_color" value="0.251, 0.320, 0.349"/>
 		<value name="cloud_shadow_color" value="0.250, 0.250, 0.400"/>
 		<value name="mie_scatter_particle_size" value="5.619"/>
-		<value name="skybox_distance" value="6000.000"/>
+		<value name="skybox_distance" value="4200.000"/>
 		<value name="scene_scale" value="1.000"/>
 		<value name="skybox_height" value="7500.000"/>
 		<value name="horizon_distance" value="7500.000"/>
