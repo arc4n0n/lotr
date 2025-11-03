@@ -17650,7 +17650,7 @@
 						<flags>
 							<flag name="lod" value="5"/>
 						</flags>
-						<transform position="-0.564, -0.092, -0.073" non_orthogonal_rotation_mat="0.108249, -0.038345, -0.993384, -0.962252, -0.014654, -0.271764, -0.004176, 0.994852, -0.101253" scale="1.465, 0.938, 0.920"/>
+						<transform position="-0.652, -0.216, 0.711" non_orthogonal_rotation_mat="0.108249, -0.038345, -0.993384, -0.962252, -0.014654, -0.271764, -0.004176, 0.994852, -0.101253" scale="1.465, 0.938, 0.920"/>
 						<components>
 							<meta_mesh_component name="heater_shield_k">
 								<mesh name="heater_shield_k" material="editor_fresnel_alpha" factor="4294943547" factor2="4278190080" argument="0.500, 1.000, 0.000, 0.000"/>
@@ -17709,13 +17709,13 @@
 						</components>
 					</game_entity>
 					<game_entity name="fire_light" old_prefab_name="">
-						<transform position="4.010, -1.023, 2.724" non_orthogonal_rotation_mat="0.929964, -0.151707, 0.334890, 0.135894, -0.006227, -0.990704, 0.155567, 0.987038, 0.039440" scale="1.036, 1.591, 0.620"/>
+						<transform position="2.975, -1.039, 2.432" non_orthogonal_rotation_mat="0.929964, -0.151707, 0.334890, 0.135894, -0.006227, -0.990704, 0.155567, 0.987038, 0.039440" scale="1.036, 1.591, 0.620"/>
 						<components>
 							<light_component color="1.000, 0.392, 0.114" intensity="80000.000" radius="15.000" flicker_interval="0.500" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="2.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
 						</components>
 					</game_entity>
 					<game_entity name="fire_light" old_prefab_name="">
-						<transform position="4.273, -1.159, 0.326" non_orthogonal_rotation_mat="0.929964, -0.151707, 0.334890, 0.135894, -0.006227, -0.990704, 0.155567, 0.987038, 0.039440" scale="1.036, 1.591, 0.620"/>
+						<transform position="3.238, -1.175, 0.034" non_orthogonal_rotation_mat="0.929964, -0.151707, 0.334890, 0.135894, -0.006227, -0.990704, 0.155567, 0.987038, 0.039440" scale="1.036, 1.591, 0.620"/>
 						<components>
 							<light_component color="1.000, 0.392, 0.114" intensity="80000.000" radius="15.000" flicker_interval="0.500" flicker_magnitude="1.000" local_frame_rot="15.000000, 0.000000, 0.000000, 0.000000, 15.000000, 0.000000, 0.000000, 0.000000, 15.000000" hotspot_angle="2.000" falloff_angle="45.000" shadow_size_multiplier="1" shadow_radius="8.000"/>
 						</components>
@@ -17780,115 +17780,7 @@
 				<flags>
 					<flag name="not_affected_by_season" value="true"/>
 				</flags>
-				<transform position="-7.352, 0.196, 6.266" rotation_euler="0.000, 0.000, -0.024" scale="0.400, 0.590, 3.955"/>
-				<physics shape="bo_empire_bridge_a_part_c"/>
-				<components>
-					<meta_mesh_component name="empire_bridge_c_part_c">
-						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-					</meta_mesh_component>
-				</components>
-			</game_entity>
-			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
-				<flags>
-					<flag name="not_affected_by_season" value="true"/>
-				</flags>
-				<transform position="7.198, -0.145, 6.266" rotation_euler="0.000, 0.000, 3.118" scale="0.400, 0.590, 3.955"/>
-				<physics shape="bo_empire_bridge_a_part_c"/>
-				<components>
-					<meta_mesh_component name="empire_bridge_c_part_c">
-						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-					</meta_mesh_component>
-				</components>
-			</game_entity>
-			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
-				<flags>
-					<flag name="not_affected_by_season" value="true"/>
-				</flags>
-				<transform position="5.741, -0.109, 1.101" rotation_euler="0.000, 0.000, 3.118" scale="1.071, 1.006, 3.820"/>
-				<physics shape="bo_empire_bridge_a_part_c"/>
-				<components>
-					<meta_mesh_component name="empire_bridge_c_part_c">
-						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-					</meta_mesh_component>
-				</components>
-			</game_entity>
-			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
-				<flags>
-					<flag name="not_affected_by_season" value="true"/>
-				</flags>
-				<transform position="-5.892, 0.157, 1.101" rotation_euler="0.000, 0.000, -0.024" scale="1.071, 1.006, 3.820"/>
-				<physics shape="bo_empire_bridge_a_part_c"/>
-				<components>
-					<meta_mesh_component name="empire_bridge_c_part_c">
-						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
-					</meta_mesh_component>
-				</components>
-			</game_entity>
-			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
-				<flags>
-					<flag name="not_affected_by_season" value="true"/>
-				</flags>
-				<transform position="-5.892, 0.157, 5.079" rotation_euler="0.000, 0.000, -0.024" scale="0.980, 1.320, 2.135"/>
+				<transform position="-5.892, 0.157, 4.419" rotation_euler="0.000, 0.000, -0.024" scale="0.980, 1.320, 2.135"/>
 				<physics shape="bo_empire_bridge_a_part_c"/>
 				<components>
 					<meta_mesh_component name="empire_bridge_c_part_c">
@@ -17915,7 +17807,7 @@
 				<flags>
 					<flag name="not_affected_by_season" value="true"/>
 				</flags>
-				<transform position="5.741, -0.109, 5.079" rotation_euler="0.000, 0.000, 3.118" scale="0.980, 1.320, 2.135"/>
+				<transform position="5.741, -0.109, 4.419" rotation_euler="0.000, 0.000, 3.118" scale="0.980, 1.320, 2.135"/>
 				<physics shape="bo_empire_bridge_a_part_c"/>
 				<components>
 					<meta_mesh_component name="empire_bridge_c_part_c">
@@ -21489,6 +21381,292 @@
 						<mesh name="module_european_house_end_attick_d.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
 						<mesh name="module_european_house_end_attick_d.1" material="black_metal" argument2="1.000, 1.000, 0.000, 0.000"/>
 						<mesh name="module_european_house_end_attick_d.2" material="black_metal" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="barad_dur_horn" old_prefab_name="">
+				<transform position="-0.514, -0.110, 12.938" rotation_euler="0.000, 0.000, 3.105" scale="1.000, 1.000, 1.109"/>
+				<children>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="6.112, -0.359, 7.872" non_orthogonal_rotation_mat="0.678205, 0.720338, -0.145431, -0.868609, 0.459276, 0.185966, 0.209458, 0.000208, 0.977818" scale="0.587, 0.587, 2.528"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="3.075, 0.200, 3.531" rotation_euler="-0.372, 0.427, -0.682" scale="0.587, 0.587, 1.817"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 2.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 2.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="3.266, -0.340, 3.384" non_orthogonal_rotation_mat="0.587250, 0.723030, -0.363821, -0.753946, 0.455809, 0.473078, 0.529907, -0.003666, 0.848048" scale="0.587, 0.587, 1.817"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="1.787, 0.230, 2.488" rotation_euler="-0.675, 0.947, -0.433" scale="0.590, 0.590, 1.520"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="1.864, -0.316, 2.250" non_orthogonal_rotation_mat="0.327830, 0.708115, -0.625380, -0.397460, 0.474661, 0.785317, 0.889927, -0.009272, 0.456009" scale="0.584, 0.590, 1.524"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="5.887, 0.182, 7.930" rotation_euler="-0.146, 0.153, -0.755" scale="0.587, 0.587, 2.528"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="barad_dur_horn" old_prefab_name="">
+				<transform position="0.361, -0.179, 12.939" rotation_euler="0.000, 0.000, 0.002" scale="1.000, 1.000, 1.109"/>
+				<children>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="6.156, -0.348, 7.872" non_orthogonal_rotation_mat="0.678205, 0.720338, -0.145431, -0.868609, 0.459276, 0.185966, 0.209458, 0.000208, 0.977818" scale="0.587, 0.587, 2.528"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="3.088, 0.205, 3.531" rotation_euler="-0.372, 0.427, -0.682" scale="0.587, 0.587, 1.817"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="3.309, -0.329, 3.384" non_orthogonal_rotation_mat="0.587250, 0.723030, -0.363821, -0.753946, 0.455809, 0.473078, 0.529907, -0.003666, 0.848047" scale="0.587, 0.587, 1.817"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 2.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 2.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="1.800, 0.234, 2.487" rotation_euler="-0.675, 0.947, -0.433" scale="0.590, 0.590, 1.520"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="1.908, -0.305, 2.250" non_orthogonal_rotation_mat="0.327830, 0.708115, -0.625380, -0.397460, 0.474661, 0.785317, 0.889927, -0.009272, 0.456009" scale="0.584, 0.590, 1.524"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.500, 1.500, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="module_european_house_end_attick_d" old_prefab_name="" occlusion_body_name="bo_occ_module_european_house_end_attick_d">
+						<flags>
+							<flag name="not_affected_by_season" value="true"/>
+						</flags>
+						<transform position="5.900, 0.188, 7.929" rotation_euler="-0.146, 0.153, -0.755" scale="0.587, 0.587, 2.528"/>
+						<physics shape="bo_module_european_house_end_attick_d"/>
+						<components>
+							<meta_mesh_component name="module_european_house_end_attick_d">
+								<mesh name="module_european_house_end_attick_d.0" material="roman_aqueduct_bricks_b" factor="4282740364" argument2="1.000, 1.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.1" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+								<mesh name="module_european_house_end_attick_d.2" material="waterfall_dust" factor="4282740364" argument2="0.250, 2.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-7.352, 0.196, 4.146" rotation_euler="0.000, 0.000, -0.024" scale="0.600, 0.590, 3.950"/>
+				<physics shape="bo_empire_bridge_a_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_c_part_c">
+						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="-5.188, 0.140, -0.872" rotation_euler="0.000, 0.000, -0.024" scale="1.300, 1.010, 3.820"/>
+				<physics shape="bo_empire_bridge_a_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_c_part_c">
+						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="7.198, -0.145, 4.146" rotation_euler="0.000, 0.000, 3.118" scale="0.600, 0.590, 3.950"/>
+				<physics shape="bo_empire_bridge_a_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_c_part_c">
+						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="empire_bridge_c_part_c" old_prefab_name="">
+				<flags>
+					<flag name="not_affected_by_season" value="true"/>
+				</flags>
+				<transform position="5.080, -0.094, -0.872" rotation_euler="0.000, 0.000, 3.118" scale="1.300, 1.010, 3.820"/>
+				<physics shape="bo_empire_bridge_a_part_c"/>
+				<components>
+					<meta_mesh_component name="empire_bridge_c_part_c">
+						<mesh name="empire_bridge_c_part_c.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod5.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod1.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod2.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod3.2" material="waterfall_dust" argument2="1.000, 2.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.0" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
+						<mesh name="empire_bridge_c_part_c.lod7.1" material="mordor_bricks" argument2="1.000, 1.000, 0.000, 0.000"/>
 					</meta_mesh_component>
 				</components>
 			</game_entity>
@@ -25973,8 +26151,30 @@
 					<emitter_overrides>
 						<emitter guid="{91DE7F64-8F4D-4105-A197-22047F264CE8}">
 							<parameters>
-								<parameter name="quad_bias" value="0.350, 0.350"/>
-								<parameter name="emission_rate" base="35.000" bias="0.000"/>
+								<parameter name="gravity" value="0.000, 0.000, 7.000"/>
+								<parameter name="quad_bias" value="0.500, 0.500"/>
+								<parameter name="damping" base="0.700" bias="0.000"/>
+								<parameter name="angular_damping" base="0.500" bias="0.000"/>
+								<parameter name="emission_rate" base="45.000" bias="0.000"/>
+								<parameter name="emit_velocity_x" base="0.000" bias="3.000"/>
+								<parameter name="emit_velocity_y" base="0.000" bias="3.000"/>
+								<parameter name="emit_velocity_z" base="5.000" bias="3.000"/>
+								<parameter name="particle_color">
+									<color>
+										<keys>
+											<key time="0.100" value="0.488, 0.488, 0.488"/>
+											<key time="0.900" value="0.523, 0.523, 0.523"/>
+										</keys>
+									</color>
+									<alpha>
+										<keys>
+											<key time="0.000" value="0.000"/>
+											<key time="0.248" value="0.137"/>
+											<key time="0.700" value="0.078"/>
+											<key time="1.000" value="0.000"/>
+										</keys>
+									</alpha>
+								</parameter>
 							</parameters>
 						</emitter>
 					</emitter_overrides>
