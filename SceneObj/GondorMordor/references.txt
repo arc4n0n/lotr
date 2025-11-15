@@ -1,4 +1,14 @@
-1679
+1706
+flora_entity agriculture_carrot
+flora_entity agriculture_leek
+flora_entity flora_reed_a
+flora_entity flora_reed_b
+flora_entity flora_shrub_mix
+flora_entity flora_tree_acacia_fall_mix
+flora_entity flora_tree_birch_mix
+flora_entity plant_dry_grass
+flora_entity pumpkin_plant
+flora_entity wheat_group_summer
 mesh agriculture_chickpeas
 mesh agriculture_leek
 mesh animation_stand_arrow_blue
@@ -236,6 +246,15 @@ mesh battania_castle_keep_wood_stake_c
 mesh battania_castle_keep_wood_stake_d
 mesh battania_castle_keep_wood_stake_e
 mesh battania_castle_stairs_a_l2
+mesh battania_castle_tower_roof_1
+mesh battania_castle_tower_roof_2
+mesh battania_castle_tower_roof_3
+mesh battania_castle_tower_roof_4
+mesh battania_castle_tower_roof_5
+mesh battania_castle_tower_roof_6
+mesh battania_castle_tower_roof_7
+mesh battania_castle_tower_roof_8
+mesh battania_castle_tower_roof_9
 mesh battania_castle_wall_a_l1
 mesh battania_castle_wall_a_l1_01
 mesh battania_castle_wall_a_l1_02
@@ -251,6 +270,10 @@ mesh battania_castle_wall_d_l1_02
 mesh battania_castle_wall_d_l1_03
 mesh battania_castle_wall_d_l1_04
 mesh battania_castle_wall_d_l1_broken
+mesh battania_castle_wall_d_roof_1
+mesh battania_castle_wall_d_roof_2
+mesh battania_castle_wall_d_roof_3
+mesh battania_castle_wall_d_roof_4
 mesh battania_castle_wall_gate_l1
 mesh battania_castle_wall_l1_stairs
 mesh battania_civil_hood
@@ -713,6 +736,7 @@ mesh empire_street_tent_02
 mesh empire_street_tent_04
 mesh empire_street_tent_06
 mesh empire_tower_a
+mesh empire_tower_a_mini
 mesh empire_village_house_d
 mesh empire_village_house_door_b
 mesh empire_wall_tower_c_corner
@@ -722,6 +746,7 @@ mesh empire_wall_tower_roof_d
 mesh european_castle_barn_b_l3
 mesh european_castle_bridge_a_destroyed
 mesh european_castle_bridge_a_new
+mesh european_castle_bridge_a_new_destroyed
 mesh european_castle_corner_a_l1_roof
 mesh european_castle_corner_c_l1
 mesh european_castle_corner_c_l1_01
@@ -878,7 +903,6 @@ mesh fullskull
 mesh gold
 mesh grape_branch
 mesh grape_leaf
-mesh grass_terrain_b
 mesh guitar
 mesh hammer_wooden
 mesh hands_male_a
@@ -935,6 +959,7 @@ mesh ivy_european_05
 mesh ivy_european_06
 mesh khuzait_arena_fence_a
 mesh khuzait_arena_fence_b
+mesh khuzait_arena_fence_c
 mesh khuzait_arena_fence_door_a_open
 mesh khuzait_arena_stadium_b
 mesh khuzait_arena_stadium_b_stairs
@@ -967,6 +992,7 @@ mesh khuzait_castle_gate_outer_l1_state4
 mesh khuzait_castle_gate_outer_l1_state5
 mesh khuzait_castle_keep_l3_interior_throne_platform
 mesh khuzait_castle_stairs_a_l2
+mesh khuzait_castle_stairs_c_l1
 mesh khuzait_castle_tower_round_a_l1
 mesh khuzait_castle_tower_round_a_l1_01
 mesh khuzait_castle_tower_round_a_l1_02
@@ -987,6 +1013,7 @@ mesh khuzait_castle_tower_round_a_l1_stairs1
 mesh khuzait_castle_tower_round_a_l1_stairs2
 mesh khuzait_castle_tower_round_a_l1_stairs3
 mesh khuzait_castle_tower_round_a_l1_stairs4
+mesh khuzait_castle_tower_round_a_l3
 mesh khuzait_castle_wall_a_l1
 mesh khuzait_castle_wall_a_l1_01
 mesh khuzait_castle_wall_a_l1_02
@@ -1082,6 +1109,7 @@ mesh log_pine_i
 mesh log_pine_j
 mesh log_pine_m
 mesh log_tree_high_a
+mesh log_tree_high_b
 mesh log_tree_high_group_b
 mesh longbow_a
 mesh mace_handle_1
@@ -1235,7 +1263,6 @@ mesh plant_desert_bush_b
 mesh plant_desert_bush_c
 mesh plant_desert_bush_c2
 mesh plant_desert_bush_d
-mesh plant_dry_grass_a
 mesh pot_break_a
 mesh pot_break_b
 mesh pot_break_c
