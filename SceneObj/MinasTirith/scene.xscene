@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<scene name="MinasTirith" version="2" unique_token="{F1949D9F-5EAD-4AD1-8430-38C3A1F7E534}" revision="1763483028217" id_automatic="true">
-	<flora_bounding_rect min="0.000, 0.000" max="640.000, 800.000"/>
+<scene name="MinasTirith" version="2" unique_token="{F1949D9F-5EAD-4AD1-8430-38C3A1F7E534}" revision="1763505084997" id_automatic="true">
+	<flora_bounding_rect min="2.393, 2.549" max="634.383, 790.052"/>
 	<levels>
 		<level name="base" mask="1"/>
 		<level name="level_1" mask="2"/>
@@ -43,12 +43,6 @@
 		</out_of_bounds_effects_properties>
 	</environment_properties>
 	<entities>
-		<game_entity prefab="atmosphere_probe">
-			<transform position="257.824, 432.727, 198.055" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
-		<game_entity prefab="envmap_prop">
-			<transform position="254.360, 429.375, 196.034" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
 		<game_entity name="minas_tirith" old_prefab_name="minas_tirith">
 			<transform position="441.456, 411.139, 44.302" rotation_euler="0.000, 0.000, 1.633"/>
 			<children>
@@ -30859,6 +30853,30 @@
 				</game_entity>
 			</children>
 		</game_entity>
+		<game_entity prefab="envmap_prop">
+			<transform position="254.360, 429.375, 196.034" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="atmosphere_probe">
+			<transform position="257.824, 432.727, 198.055" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="border_soft">
+			<transform position="2.393, 2.549, 106.086" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="border_soft">
+			<transform position="634.383, 5.939, 25.110" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="border_soft">
+			<transform position="631.380, 788.980, 46.140" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="border_soft">
+			<transform position="9.820, 790.052, 125.521" rotation_euler="0.000, 0.000, 0.000"/>
+		</game_entity>
+		<game_entity prefab="spawn_visual">
+			<transform position="494.824, 235.462, 35.497" rotation_euler="0.000, 0.000, -1.225"/>
+		</game_entity>
+		<game_entity prefab="mp_camera_start_pos">
+			<transform position="497.082, 231.679, 35.530" rotation_euler="0.000, 0.000, 2.155"/>
+		</game_entity>
 	</entities>
 	<terrain enabled="true" node_dimension_x="4" node_dimension_y="5" node_size="160.000" lod_multiplier="1.000" min_height="20.501" max_height="285.753" vista_normalmap="" vista_diffuse_name="" vista_diffuse_blend_type="0" vista_diffuse_blend_amount="0.000" vista_layer_detail_distance="35.000" vista_albedo_multiplier="0.670" vista_detail_albedo_name="" vista_detail_normal_name="" vista_detail_tile="20.000" vista_tileset="" use_dynamic_weather_effects="0" dynamic_flowmap_texture_name="" colormap_detail_level="-1" ao_intensity="4.000">
 		<outer_mesh>
@@ -31816,7 +31834,7 @@
 			</node>
 		</nodes>
 	</terrain>
-	<editor_data editor_camera_position="684.726, 350.842, 245.170" editor_camera_elevation="-0.329" editor_camera_bearing="4.853" editor_camera_forward="-0.808, 0.137, -0.573" author="" comment=""/>
+	<editor_data editor_camera_position="508.965, 216.282, 46.160" editor_camera_elevation="0.181" editor_camera_bearing="7.736" editor_camera_forward="-0.615, 0.747, -0.252" author="" comment=""/>
 	<camera_data near_plane="0.100" far_plane="100000.000"/>
 	<Paths>
 		<path name="minas_tirith_ram" interpolation_type="quadratic" scene_upgrade_level_mask_="4294967295" season_mask_="255">

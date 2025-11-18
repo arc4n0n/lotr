@@ -1,4 +1,4 @@
-192
+196
 mesh animation_stand_arrow_blue
 mesh arabian_house_new_a
 mesh arabian_house_new_b
@@ -146,7 +146,11 @@ mesh tree_root_b_dry
 mesh vlandia_bench_a
 mesh vlandia_keep_door_b
 prefab atmosphere_probe
+prefab attacker_spawn_visual
+prefab border_soft
 prefab envmap_prop
+prefab mp_camera_start_pos
+prefab spawn_visual
 texture adobe_wall_white_d
 texture ashes_s
 texture cg_50c_5b
