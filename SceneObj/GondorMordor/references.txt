@@ -1,19 +1,25 @@
-1706
+1699
 flora_entity agriculture_carrot
 flora_entity agriculture_leek
+flora_entity desert_rubble_stone_01
 flora_entity flora_reed_a
 flora_entity flora_reed_b
 flora_entity flora_shrub_mix
 flora_entity flora_tree_acacia_fall_mix
 flora_entity flora_tree_birch_mix
+flora_entity ground_rock
+flora_entity ground_rocks_group
+flora_entity plant_desert_bush_b
+flora_entity plant_desert_bush_c
+flora_entity plant_desert_bush_d
 flora_entity plant_dry_grass
 flora_entity pumpkin_plant
+flora_entity tree_forest_beech___mix_branches_b
 flora_entity wheat_group_summer
 mesh agriculture_chickpeas
 mesh agriculture_leek
 mesh animation_stand_arrow_blue
 mesh aquila
-mesh arab_awning_b3
 mesh arabian_building_detail_a
 mesh arabian_castle_barn_b
 mesh arabian_fountain_a
@@ -731,10 +737,6 @@ mesh empire_street_pottery_03
 mesh empire_street_pottery_04
 mesh empire_street_pottery_05
 mesh empire_street_pottery_06
-mesh empire_street_tent_01
-mesh empire_street_tent_02
-mesh empire_street_tent_04
-mesh empire_street_tent_06
 mesh empire_tower_a
 mesh empire_tower_a_mini
 mesh empire_village_house_d
@@ -900,7 +902,6 @@ mesh forest_ruinous_tree_c
 mesh forest_ruinous_tree_palm_a
 mesh forest_ruinous_tree_palm_b
 mesh fullskull
-mesh gold
 mesh grape_branch
 mesh grape_leaf
 mesh guitar
@@ -950,6 +951,7 @@ mesh hut_c
 mesh hut_d
 mesh icon_man
 mesh intro_scene
+mesh invalid_mesh
 mesh iron_a
 mesh ivy_european_01
 mesh ivy_european_02
@@ -1238,15 +1240,6 @@ mesh outermesh_mountains_c_outer_h
 mesh padded_vambrace_a_mitten
 mesh padded_vambrace_a_reinforced
 mesh pandora
-mesh pb_adv_handcannon
-mesh pb_basket
-mesh pb_ore
-mesh pb_ore_coal
-mesh pb_ore_gold
-mesh pb_ore_iron
-mesh pb_ore_silver
-mesh pb_seeds
-mesh pb_strawhat
 mesh peasent_scythe
 mesh peasent_sickle
 mesh pict_armor_boot
@@ -1664,6 +1657,7 @@ prefab wheel_rear
 texture adobe_wall_white_d
 texture ashes_s
 texture cg_50c_5b
+texture cine_cloudy_day02
 texture desert_floor_a
 texture desert_floor_a_h
 texture desert_floor_a_n
@@ -1699,7 +1693,6 @@ texture rock_cliff_b_d
 texture rock_cliff_b_h
 texture rock_cliff_b_n
 texture rock_cliff_b_s
-texture sky_photo_cloudy_02
 texture snow_a_d
 texture snow_a_h
 texture snow_a_n
