@@ -1,7 +1,9 @@
-1699
+1712
 flora_entity agriculture_carrot
 flora_entity agriculture_leek
+flora_entity artemis_white
 flora_entity desert_rubble_stone_01
+flora_entity flora_dry_plant_i
 flora_entity flora_reed_a
 flora_entity flora_reed_b
 flora_entity flora_shrub_mix
@@ -15,6 +17,7 @@ flora_entity plant_desert_bush_d
 flora_entity plant_dry_grass
 flora_entity pumpkin_plant
 flora_entity tree_forest_beech___mix_branches_b
+flora_entity tree_high_sycamore_a
 flora_entity wheat_group_summer
 mesh agriculture_chickpeas
 mesh agriculture_leek
@@ -444,6 +447,11 @@ mesh castle_plank_ramp_b
 mesh castle_plank_ramp_wall_a
 mesh castle_plank_wall_a
 mesh castle_plank_wall_c
+mesh castle_scaffold_a
+mesh castle_scaffold_a_00
+mesh castle_scaffold_a_01
+mesh castle_scaffold_a_02
+mesh castle_scaffold_a_03
 mesh casual_01
 mesh casual_02
 mesh casual_02_boots
@@ -780,6 +788,7 @@ mesh european_castle_l1_corner_upstairs_a_stairs
 mesh european_castle_ladder
 mesh european_castle_stairs_a_l1
 mesh european_castle_stairs_a_l2
+mesh european_castle_stairs_a_l3
 mesh european_castle_stairs_b_l1
 mesh european_castle_stairs_b_l2
 mesh european_castle_stairs_b_l3
@@ -875,7 +884,6 @@ mesh flag_pole_big
 mesh flag_stand
 mesh flagpole_b
 mesh floor_dirt_d
-mesh flora_green_g
 mesh flora_green_h
 mesh flora_green_j
 mesh flora_plant_d
@@ -907,6 +915,7 @@ mesh grape_leaf
 mesh guitar
 mesh hammer_wooden
 mesh hands_male_a
+mesh hard_border_column
 mesh hawk_mesh
 mesh head_male_a
 mesh heater_shield_a
@@ -1503,8 +1512,11 @@ mesh terrain_green_rock_big_b
 mesh terrain_green_rock_big_c
 mesh terrain_green_rock_c
 mesh terrain_green_rock_d
+mesh terrain_rock_a
 mesh terrain_rock_a2
+mesh terrain_rock_b
 mesh terrain_rock_b2
+mesh terrain_rock_small_a
 mesh terrain_rock_small_b2
 mesh terrain_rock_small_c2
 mesh thamaskene_steel
@@ -1654,6 +1666,7 @@ prefab wait_pos_ground
 prefab wheel_back
 prefab wheel_front
 prefab wheel_rear
+prefab wooden_platform_2_b
 texture adobe_wall_white_d
 texture ashes_s
 texture cg_50c_5b
