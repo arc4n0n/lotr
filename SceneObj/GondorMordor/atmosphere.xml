@@ -10,7 +10,7 @@
 		<value name="fall_density" value="0.110"/>
 		<value name="snow_density" value="0.000"/>
 		<value name="is_indoor" value="false"/>
-		<value name="global_envmap_multiplier" value="4.000"/>
+		<value name="global_envmap_multiplier" value="8.000"/>
 		<value name="global_envmap_color_factor" value="0.836, 0.875, 0.875"/>
 		<value name="prt_multiplier" value="1.000"/>
 		<value name="do_not_render_envmap" value="false"/>
@@ -54,7 +54,7 @@
 		<value name="shadow_opacity" value="1.000"/>
 		<value name="minimum_ambient" value="0.000"/>
 		<value name="sun_rotation" value="90.000"/>
-		<value name="sun_intesity" value="175.000"/>
+		<value name="sun_intesity" value="360.000"/>
 		<value name="sky_brightness" value="20.000"/>
 		<value name="cloud_brightness" value="0.700"/>
 		<value name="sun_size" value="0.100"/>

@@ -1,4 +1,4 @@
-1712
+1698
 flora_entity agriculture_carrot
 flora_entity agriculture_leek
 flora_entity artemis_white
@@ -21,7 +21,6 @@ flora_entity tree_high_sycamore_a
 flora_entity wheat_group_summer
 mesh agriculture_chickpeas
 mesh agriculture_leek
-mesh animation_stand_arrow_blue
 mesh aquila
 mesh arabian_building_detail_a
 mesh arabian_castle_barn_b
@@ -335,7 +334,6 @@ mesh bd_cartbroken_d
 mesh bd_cauldron_sturgia
 mesh bd_chains_sturgia
 mesh bd_chair_a
-mesh bd_chair_b
 mesh bd_chair_c
 mesh bd_chair_d
 mesh bd_chair_king_b
@@ -394,7 +392,6 @@ mesh bd_straw_g
 mesh bd_straw_h
 mesh bd_sturgia_wall_decoration_horn_b
 mesh bd_sturgia_wall_decoration_horn_c
-mesh bd_sturgian_chair_a
 mesh bd_table_b
 mesh bd_table_c
 mesh bd_table_d
@@ -484,7 +481,6 @@ mesh cave_rock_wall_c
 mesh cave_rock_wall_d
 mesh cave_rock_wall_e
 mesh cave_wall_a
-mesh chest_empire_a
 mesh chest_empire_b
 mesh chicken_raw
 mesh civilian_ladder_4m
@@ -518,7 +514,6 @@ mesh crate_b_empty
 mesh crate_b_lid
 mesh crossbow_armor_hand
 mesh crossbow_d
-mesh crow_mesh
 mesh dagger_blade_3
 mesh dagger_blade_4
 mesh debug_lod_mesh
@@ -916,7 +911,6 @@ mesh guitar
 mesh hammer_wooden
 mesh hands_male_a
 mesh hard_border_column
-mesh hawk_mesh
 mesh head_male_a
 mesh heater_shield_a
 mesh heater_shield_i
@@ -960,7 +954,6 @@ mesh hut_c
 mesh hut_d
 mesh icon_man
 mesh intro_scene
-mesh invalid_mesh
 mesh iron_a
 mesh ivy_european_01
 mesh ivy_european_02
@@ -1100,16 +1093,12 @@ mesh kitchen_plate_grape
 mesh kitchen_pot_c
 mesh kitchen_sausage_b
 mesh kite_shield_a
-mesh lib_book_closed_a
 mesh lib_book_open_a
 mesh lib_book_open_b
-mesh lib_quill_pen
 mesh lib_scroll_a
 mesh lib_scroll_d
 mesh lobster
 mesh lodplane
-mesh log_bench_beech_c
-mesh log_bench_default_c
 mesh log_bench_default_d
 mesh log_pine_a
 mesh log_pine_group_a
@@ -1192,9 +1181,6 @@ mesh merchandise_stones
 mesh merchandise_velvet
 mesh merchandise_wooden_stick
 mesh merchandise_wool
-mesh mi_salt_mine_a
-mesh mi_salt_mine_b
-mesh mi_salt_mine_c
 mesh mi_ship_1
 mesh mi_ship_2
 mesh mi_spice_a
@@ -1360,7 +1346,6 @@ mesh siege_barricade_d
 mesh siege_barricade_e
 mesh smithy_anvil
 mesh soft_border_column
-mesh sp_cube
 mesh spear_blade_1
 mesh spear_blade_11
 mesh spear_blade_13
@@ -1581,8 +1566,6 @@ mesh vlandia_arena_grandstand_roof_cloth_a4
 mesh vlandia_arena_main_building
 mesh vlandia_arena_main_building_lords_platform
 mesh vlandia_arena_tower
-mesh vlandia_bench_a
-mesh vlandia_bench_b
 mesh vlandia_chest_c
 mesh vlandia_chest_c_lid
 mesh vlandia_dungeon_cells_a
@@ -1651,12 +1634,16 @@ mesh wooden_platform_plank_c
 mesh wooden_platform_plank_d
 mesh wooden_platform_plank_f_column
 mesh wooden_platform_stairs_a
+prefab _barrier_04x04m
 prefab ai_barrier_l
 prefab ai_barrier_r
 prefab clean
 prefab distance_holder
+prefab fence_a
+prefab fence_b
 prefab fork_holder
 prefab ground_align
+prefab hut_a
 prefab initial_wait_pos
 prefab ladder_down_state
 prefab ladder_up_state
@@ -1666,7 +1653,6 @@ prefab wait_pos_ground
 prefab wheel_back
 prefab wheel_front
 prefab wheel_rear
-prefab wooden_platform_2_b
 texture adobe_wall_white_d
 texture ashes_s
 texture cg_50c_5b
